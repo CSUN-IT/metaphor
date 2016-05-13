@@ -13,6 +13,28 @@ $black: #000;
 $cream: #d8d2c4;
 
 // TYPOGRAPHY
-$font-base: "Open Sans", helvetica, arial, sans-serif;
+$font-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-code: Menlo, Monaco, Consolas, "Courier New", monospace;
-$font-brand: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-brand: "museo-sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// GRID SYSTEM
+$grid-breakpoints: (
+  xs: 0,
+  sm: 544px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1140px
+) !default;
+
+$grid-columns: 12;
+$grid-gutter-width: 1.875rem; // ~30px
+
+// MISC
+$border-radius: 3px;

@@ -1,29 +1,27 @@
 // METAPHOR UI KIT
 //
 
+// CONFIGURATIOINS
 @import "settings";
-@import "functions";
 @import "variables";
+@import "functions";
 @import "mixins";
 
+// RESETS
 @import "normalize";
+
+// CORE
 @import "base";
+@import "type";
+@import "grid";
+
+// COMPONENTS
+@import "navigation";
+@import "buttons";
+@import "helpers";
 
 // Dependencies
 // @import "vendor/font-awesome/font-awesome";
 
-// Components
-@import "type";
-@import "buttons";
-// @import "grids";
-// @import "forms";
-// @import "selects";
-// @import "tables";
-@import "navigation";
-// @import "dropdowns";
-// @import "modals";
-// @import "alerts";
-// @import "tooltips";
-// @import "images";
-// @import "datepicker";
-@import "helpers";
+// THEME
+@import "theme/meta-footer";

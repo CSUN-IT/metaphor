@@ -20,7 +20,8 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "normalize-css": "^4.1.1"
+    "normalize-css": "^4.1.1",
+    "font-awesome": "fontawesome#^4.6.2"
   },
   "dependencies": {
     "jquery": "^2.2.3"

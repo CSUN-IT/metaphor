@@ -8,7 +8,7 @@
 # https://packagecontrol.io/packages/SublimeLinter-contrib-scss-lint
 
 scss_files: "src/sass/*.scss"
-exclude: ["src/sass/_normalize.scss", "src/sass/vendor/*/*.scss"]
+exclude: ["src/sass/_normalize.scss", "src/sass/_buttons.scss", "src/sass/vendor/*/*.scss"]
 
 linters:
   BangFormat:

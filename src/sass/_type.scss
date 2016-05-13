@@ -1,8 +1,84 @@
+// TYPOGRAPHY
+//
+
+// DESKTOP
+// small: 12px / 1.4
+// base: 15px / 1.5
+// emphasis: 18px / 1.6
+
+// MOBILE
+// small: 12px / 1.5
+// base: 15px / 1.5
+// emphasis: 18px / 1.6
+
+
+html { font-size: $font-size-root; }
+
 body {
+  @include font-smoothing();
   font-family: $font-base;
-  font-size: 1rem;
+  font-size: modular-scale(0);
+  font-weight: 400;
   line-height: 1.5;
   color: #4a4a4a;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+}
+
+h1,h2,h3,h4,h5,h6,
+.h1,.h2,.h3,.h4,.h5,.h6 {
+  margin-bottom: modular-scale(-1);
+  font-family: $font-brand;
+  font-weight: 300;
+  line-height: 1.2;
+
+  small,
+  .milli {
+    font-size: 60%;
+    font-weight: normal;
+    color: rgba(#4a4a4a, .6);
+  }
+}
+
+// HEADERS
+h1 { font-size: modular-scale(5); }
+h2 { font-size: modular-scale(4); }
+h3 { font-size: modular-scale(3); }
+h4 { font-size: modular-scale(2); }
+h5 { font-size: modular-scale(1); }
+h6 { font-size: modular-scale(0); }
+
+.page-header {
+  padding-bottom: modular-scale(0);
+  margin-bottom: modular-scale(1);
+  border-bottom: 1px solid #ccc;
+}
+
+// DISPLAY TYPE
+.giga { font-size: modular-scale(8); }
+.mega { font-size: modular-scale(7); }
+.kilo { font-size: modular-scale(6); }
+
+// SMALL TYPE
+small,
+.milli { font-size: modular-scale(-1); }
+.micro { font-size: modular-scale(-2); }
+
+// GENERAL
+p, ul, ol {
+  margin-bottom: modular-scale(1);
+  font-size: modular-scale(0);
+  color: inherit;
+}
+
+// LISTS
+ul { list-style-type: square; }
+ul, ol { line-height: 1.6; }
+
+.list--unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid rgba(#4a4a4a, .4);
 }

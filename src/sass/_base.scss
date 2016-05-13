@@ -5,6 +5,8 @@
 html {
   box-sizing: border-box;
 }
+html { font-size: $font-size-root; }
+
 
 *, *::before, *::after {
   box-sizing: inherit;
@@ -22,11 +24,6 @@ blockquote, details, hr,
 fieldset, pre, table {
   margin-top: 0;
 }
-
-// REMOVE BROWSER INPUT STYLES
-// select {
-//   appearance: none;
-// }
 
 // VERTICALLY CENTERS IMGS
 img {

@@ -8,7 +8,7 @@
 }
 
 .primary-nav--cream {
-  background-color: rgba($cream, .9);
+  background-color: rgba($cream, .95);
 
   .bar {
     background-color: $red;
@@ -28,6 +28,8 @@
 
   .primary-nav__brand {
     background-image: $csun-logo--inverse;
+    background-repeat: no-repeat;
+    background-size: 73px 20px;
 
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: $csun-logo-retina--inverse;
@@ -40,7 +42,7 @@
   height: 45px;
   text-align: center;
 
-  @media (min-width: 544px) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     float: left;
   }
 }
@@ -54,7 +56,7 @@
   cursor: pointer;
   transform: translateY(-50%);
 
-  @media (min-width: 544px) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     display: none;
   }
 
@@ -78,14 +80,15 @@
   height: 20px;
   cursor: pointer;
   background-image: $csun-logo;
+  background-repeat: no-repeat;
+  background-size: 73px 20px;
+  transform: translate(-50%, -50%);
 
   @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
     background-image: $csun-logo-retina;
   }
-  background-repeat: no-repeat;
-  transform: translate(-50%, -50%);
 
-  @media (min-width: 544px) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     top: 50%;
     left: 0;
     transform: translate(0, -50%);
@@ -101,7 +104,7 @@
   list-style: none;
 
 
-  @media (min-width: 544px) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     display: block;
     float: right;
     text-align: right;
@@ -137,7 +140,7 @@
   }
 
 
-  @media (min-width: 544px) {
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
     padding: 11px 0;
     margin-right: 5px;
     margin-left: 5px;
