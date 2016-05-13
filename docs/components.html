@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Metaphor by META+Lab</title>
+  <meta name="description" content="An elegantly crafted UI Kit for CSUN branded prototypes &amp; applications">
+
+  <!-- FONT LIBS -->
+  <script src="//use.typekit.net/gfb2mjm.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
+
+  <!-- DOC BLOCKS -->
+  <link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css">
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../dist/css/metaphor.css">
+</head>
+<body onload="prettyPrint()">
+
+  <div class="header">
+    <nav class="primary-nav primary-nav--cream">
+      <div class="container">
+        <div class="primary-nav__mobile">
+          <div class="primary-nav__btn">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </div>
+          <div class="primary-nav__brand"><span class="sr-only">California State University, Northridge (CSUN)</span></div>
+        </div>
+        <ul class="primary-nav__links">
+          <li><a href="http://alexhernandez.github.io/metaphor" class="primary-nav__link active">Documentation</a></li>
+          <li><a href="#" class="primary-nav__link">Powered-by Metaphor</a></li>
+          <li><a href="#" class="primary-nav__link">Blog</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav class="sub-nav type--white">
+      <div class="container">
+        <div class="sub-nav-wrapper">
+          <div class="sub-nav__mobile">
+            <div class="sub-nav__title"><a href="http://alexhernandez.github.io/metaphor">Metaphor</a></div>
+            <div class="sub-nav__btn"><div class="arrow"></div></div>
+          </div>
+          <ul class="sub-nav__links">
+            <li><a href="http://alexhernandez.github.io/metaphor" class="sub-nav__link">Our Vision</a></li>
+            <li><a href="http://alexhernandez.github.io/metaphor/docs/components" class="sub-nav__link">Components</a></li>
+            <li><a href="https://github.com/alexhernandez/metaphor.git" class="sub-nav__link">Get Started</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div class="main">
+    <div class="section section-headline" style="background-color: rgba(216, 210, 196, 0.2);">
+      <div class="container">
+        <h1 class="type--marginless type--thin">Components</h1>
+      </div>
+    </div>
+
+    <style>
+      .grid-example > .col--outline {
+        border: 2px solid rgba(216, 210, 196, 1);
+        border-radius: 3px;
+        padding: 6px;
+        text-align: center;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    </style>
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+          <div class="row">
+            <div class="col-sm-3">
+              <h2 id="grid" class="h3">Grid System</h2>
+            </div>
+            <div class="col-sm-9">
+              <div class="row grid-example">
+                <div class="col--outline col-sm-2">1</div>
+                <div class="col--outline col-sm-10">2</div>
+                <div class="col--outline col-sm-4">3</div>
+                <div class="col--outline col-sm-8">4</div>
+                <div class="col--outline col-sm-6">5</div>
+                <div class="col--outline col-sm-6">6</div>
+                <div class="col--outline col-sm-8">7</div>
+                <div class="col--outline col-sm-4">8</div>
+                <div class="col--outline col-sm-10">9</div>
+                <div class="col--outline col-sm-2">10</div>
+              </div>
+
+            <br>
+
+            <pre class="prettyprint" style="padding:20px; border-radius: 3px; font-size: 18px;"><code class="lang-markup">&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-8&quot;&gt;.col-md-8&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+  &lt;div class=&quot;col-md-4&quot;&gt;.col-md-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+  &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
+&lt;/div&gt;</code><br></pre>
+            </div>
+          </div>
+
+            <br><br><hr><br><br>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <h2 id="typography" class="h3">Typography</h2>
+            </div>
+            <div class="col-sm-9">
+              <h1 class="giga">Giga Faculty Heading <small>64px</small></h1>
+              <h1 class="mega">Mega Faculty Heading <small>54px</small></h1>
+              <h1 class="kilo">Kilo Faculty Heading <small>48px</small></h1>
+              <h1>H1:Simple Headline One <small>42px</small></h1>
+              <h2>H2:Simple Headline Two <small>35px</small></h2>
+              <h3>H3:Simple Headline Three <small>26px</small></h3>
+              <h4>H4:Simple Headline Four <small>20px</small></h4>
+              <h5>H5:Simple Headline Five <small>16px</small></h5>
+              <h6>H6:Simple Headline Six <small>14px</small></h6>
+
+              <br>
+
+            <pre class="prettyprint" style="padding:20px; border-radius: 3px; font-size: 18px;"><code class="lang-markup">&lt;h1 class=&quot;giga&quot;&gt;Display Headline Giga&lt;/h1&gt;
+&lt;h1 class=&quot;mega&quot;&gt;Display Headline Mega&lt;/h1&gt;
+&lt;h1 class=&quot;kilo&quot;&gt;Display Headline Kilo&lt;/h1&gt;
+
+&lt;h1 class=&quot;page-header&quot;&gt;Page Headline&lt;/h1&gt;
+
+&lt;h1&gt;Headline One&lt;/h1&gt;
+&lt;h2&gt;Headline Two&lt;/h2&gt;
+&lt;h3&gt;Headline Three&lt;/h3&gt;
+&lt;h4&gt;Headline Four&lt;/h4&gt;
+&lt;h5&gt;Headline Five&lt;/h5&gt;
+&lt;h6&gt;Headline Six&lt;/h6&gt;</code><br></pre>
+            </div>
+          </div>
+          <br><br><hr><br><br>
+
+          <div class="row">
+            <div class="col-sm-3">
+              <h2 id="buttons" class="h3">Buttons</h2>
+            </div>
+            <div class="col-sm-9">
+            <div>
+              <a class="btn btn-default btn-xs">Button</a>
+              <a class="btn btn-default btn-sm">Button</a>
+              <a class="btn btn-default">Button</a>
+              <a class="btn btn-default btn-lg">Button</a>
+              <br><br>
+              <a class="btn btn-primary btn-xs">Button</a>
+              <a class="btn btn-primary btn-sm">Button</a>
+              <a class="btn btn-primary">Button</a>
+              <a class="btn btn-primary btn-lg">Button</a>
+              <a class="btn btn-primary-outline btn-xs">Button</a>
+              <a class="btn btn-primary-outline btn-sm">Button</a>
+              <a class="btn btn-primary-outline">Button</a>
+              <a class="btn btn-primary-outline btn-lg">Button</a>
+              <br><br>
+              <a class="btn btn-success btn-xs">Button</a>
+              <a class="btn btn-success btn-sm">Button</a>
+              <a class="btn btn-success">Button</a>
+              <a class="btn btn-success btn-lg">Button</a>
+              <a class="btn btn-success-outline btn-xs">Button</a>
+              <a class="btn btn-success-outline btn-sm">Button</a>
+              <a class="btn btn-success-outline">Button</a>
+              <a class="btn btn-success-outline btn-lg">Button</a>
+              <br><br>
+              <a class="btn btn-info btn-xs">Button</a>
+              <a class="btn btn-info btn-sm">Button</a>
+              <a class="btn btn-info">Button</a>
+              <a class="btn btn-info btn-lg">Button</a>
+              <a class="btn btn-info-outline btn-xs">Button</a>
+              <a class="btn btn-info-outline btn-sm">Button</a>
+              <a class="btn btn-info-outline">Button</a>
+              <a class="btn btn-info-outline btn-lg">Button</a>
+              <br><br>
+              <a class="btn btn-danger btn-xs">Button</a>
+              <a class="btn btn-danger btn-sm">Button</a>
+              <a class="btn btn-danger">Button</a>
+              <a class="btn btn-danger btn-lg">Button</a>
+              <a class="btn btn-danger-outline btn-xs">Button</a>
+              <a class="btn btn-danger-outline btn-sm">Button</a>
+              <a class="btn btn-danger-outline">Button</a>
+              <a class="btn btn-danger-outline btn-lg">Button</a>
+              <br><br>
+              <a class="btn btn-warning btn-xs">Button</a>
+              <a class="btn btn-warning btn-sm">Button</a>
+              <a class="btn btn-warning">Button</a>
+              <a class="btn btn-warning btn-lg">Button</a>
+              <a class="btn btn-warning-outline btn-xs">Button</a>
+              <a class="btn btn-warning-outline btn-sm">Button</a>
+              <a class="btn btn-warning-outline">Button</a>
+              <a class="btn btn-warning-outline btn-lg">Button</a>
+            </div>
+
+              <br>
+
+            <pre class="prettyprint" style="padding:20px; border-radius: 3px; font-size: 18px;"><code class="lang-markup">&lt;a class=&quot;btn btn-default btn-xs&quot;&gt;Button&lt;/a&gt;
+&lt;a class=&quot;btn btn-default btn-sm&quot;&gt;Button&lt;/a&gt;
+&lt;a class=&quot;btn btn-default&quot;&gt;Button&lt;/a&gt;
+&lt;a class=&quot;btn btn-default btn-lg&quot;&gt;Button&lt;/a&gt;
+
+&lt;a class=&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
+&lt;a class=&quot;btn btn-info&quot;&gt;Button&lt;/a&gt;
+&lt;a class=&quot;btn btn-success&quot;&gt;Button&lt;/a&gt;
+&lt;a class=&quot;btn btn-warning&quot;&gt;Button&lt;/a&gt;
+&lt;a class=&quot;btn btn-danger&quot;&gt;Button&lt;/a&gt;</code></pre>
+            </div>
+          </div>
+          <br><br><hr><br><br>
+
+          <p><em>More Docs Coming Soon... ;D</em></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="metalab-footer">
+    <div class="metalab-wrapper">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="metalab-branding">
+              <img src="http://www.csun.edu/faculty/imgs/meta-logo-horz.png" alt="CSUN META Lab Logo">
+              <ul class="list--unstyled">
+                <li><a href="http://metalab.csun.edu">metalab.csun.edu</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <ul class="list--unstyled metalab-tagline">
+              <li>Explore. Learn. Go Beyond.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="../dist/js/metaphor.js"></script>
+</body>
+</html>

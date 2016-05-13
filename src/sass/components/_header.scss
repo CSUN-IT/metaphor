@@ -27,3 +27,15 @@
     margin-top: -125px;
   }
 }
+
+.main > .section-headline {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    min-height: 100px;
+    padding: 80px 0 25px;
+    margin-top: -55px;
+  }
+}

@@ -217,8 +217,7 @@ body {
   line-height: 1.5;
   color: #4a4a4a; }
 
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0.83333rem;
   font-family: "museo-sans", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
@@ -229,39 +228,32 @@ h1, h2, h3, h4, h5, h6,
   h3 .milli, h4 small,
   h4 .milli, h5 small,
   h5 .milli, h6 small,
-  h6 .milli,
-  .h1 small,
-  .h1 .milli, .h2 small,
-  .h2 .milli, .h3 small,
-  .h3 .milli, .h4 small,
-  .h4 .milli, .h5 small,
-  .h5 .milli, .h6 small,
-  .h6 .milli {
+  h6 .milli {
     font-size: 60%;
     font-weight: normal;
     color: rgba(74, 74, 74, 0.6); }
 
-h1 {
+h1, .h1 {
   font-size: 2.48832rem; }
 
-h2 {
+h2, .h2 {
   font-size: 2.0736rem; }
 
-h3 {
+h3, .h3 {
   font-size: 1.728rem; }
 
-h4 {
+h4, .h4 {
   font-size: 1.44rem; }
 
-h5 {
+h5, .h5 {
   font-size: 1.2rem; }
 
-h6 {
+h6, .h6 {
   font-size: 1rem; }
 
 .page-header {
   padding-bottom: 1rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.44rem;
   border-bottom: 1px solid #ccc; }
 
 .giga {
@@ -280,7 +272,7 @@ small,
 .micro {
   font-size: 0.69444rem; }
 
-p, ul, ol {
+p, ul, ol, pre, code {
   margin-bottom: 1.2rem;
   font-size: 1rem;
   color: inherit; }
@@ -947,6 +939,16 @@ hr {
       padding-bottom: 150px;
       margin-top: -125px; } }
 
+.main > .section-headline {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  @media (min-width: 992px) {
+    .main > .section-headline {
+      min-height: 100px;
+      padding: 80px 0 25px;
+      margin-top: -55px; } }
+
 .primary-nav {
   position: relative;
   background-color: rgba(255, 255, 255, 0.95); }
@@ -1061,7 +1063,7 @@ hr {
     border-radius: 3px; }
   @media (min-width: 992px) {
     .primary-nav__link {
-      padding: 11px 0;
+      padding: 10px 0;
       margin-right: 5px;
       margin-left: 5px;
       border-top: 2px solid transparent; }
@@ -1073,7 +1075,6 @@ hr {
 
 .sub-nav {
   position: relative;
-  width: 100%;
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #ccc;
   transition: background-color .3s ease; }
@@ -1112,6 +1113,7 @@ hr {
   @media (min-width: 992px) {
     .sub-nav__mobile {
       float: left;
+      height: auto;
       border-bottom: 0; } }
 
 .sub-nav__title {
@@ -1168,13 +1170,13 @@ hr {
     background-color: #4a4a4a; }
   @media (min-width: 992px) {
     .sub-nav__link {
-      padding: 20px 0 17px;
+      padding: 19px 0 15px;
       margin-right: 10px;
       margin-left: 10px;
       font-size: 12px;
       background-color: transparent; }
       .sub-nav__link.active {
-        color: #4a4a4a;
+        color: #d00d2d;
         background-color: transparent;
         border-color: #d00d2d;
         border-radius: 0; } }
