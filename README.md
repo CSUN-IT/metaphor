@@ -7,7 +7,7 @@ An elegantly crafted UI Kit for CSUN branded prototypes & applications.
 Install Metaphor with [Bower](http://bower.io) package manager into your project:
 
   ```bash
-  bower install metaphor --save
+  $ bower install metaphor --save
   ```
 
 ## Bugs and Feature Requests

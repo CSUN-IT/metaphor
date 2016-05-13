@@ -4,9 +4,10 @@
 .sub-nav {
   @include clearfix();
   position: relative;
+  // width: 100%;
   background-color: rgba(#fff, .95);
   border-bottom: 1px solid #ccc;
-  transition: all .3s ease;
+  transition: background-color .3s ease;
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     background-color: rgba(#fff, 0);

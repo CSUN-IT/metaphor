@@ -15,10 +15,12 @@ var basePath = {
   fonts: './dist/fonts'
 };
 
-
 elixir(function(mix) {
+  mix.copy(basePath.bower + '/jquery/dist/jquery.min.js', 'src/js/vendor/jquery.js');
+
   mix.scripts([
-    'scripts.js',
+    'vendor/jquery.js',
+    'scripts.js'
   ], basePath.scripts.dist + '/metaphor.js', basePath.scripts.src );
 
   mix.sass('metaphor.scss', basePath.styles.dist, basePath.styles.src);
