@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
 
   <!-- DOC BLOCKS -->
-  <link rel="stylesheet" href="https://cdn.rawgit.com/google/code-prettify/master/styles/desert.css">
+  <link rel="stylesheet" href="http://twitter.github.com/bootstrap/assets/js/google-code-prettify/prettify.css">
   <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
 
   <!-- STYLESHEETS -->
@@ -33,6 +33,7 @@
             <div class="bar"></div>
           </div>
           <div class="primary-nav__brand"><span class="sr-only">California State University, Northridge (CSUN)</span></div>
+          <a class="sr-only" href="#main">Skip to main content</a>
         </div>
         <ul class="primary-nav__links">
           <li><a href="http://alexhernandez.github.io/metaphor" class="primary-nav__link active">Documentation</a></li>
@@ -52,32 +53,19 @@
           <ul class="sub-nav__links">
             <li><a href="http://alexhernandez.github.io/metaphor" class="sub-nav__link">Our Vision</a></li>
             <li><a href="http://alexhernandez.github.io/metaphor/docs/components" class="sub-nav__link">Components</a></li>
-            <li><a href="https://github.com/alexhernandez/metaphor.git" class="sub-nav__link">Get Started</a></li>
+            <li><a href="https://github.com/alexhernandez/metaphor.git" class="sub-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
 
-  <div class="main">
+  <main id="main" class="main" role="main">
     <div class="section section-hero" style="background-image: url(https://images.unsplash.com/photo-1443890923422-7819ed4101c0?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=a9c79afe3d7a158a876502b1cc548332);">
       <div class="container type--center">
         <h1 class="giga type--marginless type--thin type--white">Metaphor UI Kit</h1>
         <p class="type--white">Santana, v0.1.3-Alpha</p>
         <a href="https://github.com/alexhernandez/metaphor.git" class="btn btn-default-outline btn-lg">Download</a>
-      </div>
-    </div>
-    <div class="section">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 type--center">
-            <h2>Our Vision</h2>
-            <p>Metaphor has been designed to get CSUN projects from prototype to production rapidly. It includes a wide range of modular and flexible components that are easily styled. These versatile and lightweight building blocks make it easy to bring your ideas to life.</p>
-            <br>
-            <pre class="prettyprint" style="padding:20px; border-radius: 3px; font-size: 18px;"><code class="lang-bash">$ bower install metaphor --save</code><br></pre>
-          </div>
-        </div>
-
       </div>
     </div>
     <div class="section type--center" style="background-color: rgba(216, 210, 196, 0.2);">
@@ -86,28 +74,56 @@
           <div class="col-md-4">
             <div class="giga fa fa-terminal" aria-hidden="true"></div>
             <br><br>
-            <h3>Preprocessors</h3>
+            <h2 class="h3">Preprocessors</h2>
             <p>Metaphor ships with vanilla CSS, but its source code utilizes SASS as a preprocessor. Quickly get started with precompiled CSS or build on top of our source code.</p>
             <br>
           </div>
           <div class="col-md-4">
             <div class="giga fa fa-mobile-phone" aria-hidden="true"></div>
             <br><br>
-            <h3>Support For All Devices</h3>
+            <h2 class="h3">Support For All Devices</h2>
             <p>Metaphor easily and efficiently scales your websites and applications with a single code base, from phones to tablets to desktops with custom CSS media queries.</p>
             <br>
           </div>
           <div class="col-md-4">
             <div class="giga fa fa-universal-access" aria-hidden="true"></div>
             <br><br>
-            <h3>Accessibility</h3>
+            <h2 class="h3">Accessibility</h2>
             <p>Clean semantic markup is important for supporting the needs of every user and with Metaphor we've done exactly that. Help us make the web accessible for everyone.</p>
             <br>
           </div>
         </div>
       </div>
     </div>
-  </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-push-4">
+            <h3>Our Vision</h3>
+            <p class="emphasis">Metaphor is a user interface kit (UI Kit) that ensures web applications maintain consistency with CSUN branding and identity standards. Metaphor was built specifically to improve the mobile user experience and assures compliance with ADA guidelines on all platforms. It will also extend the current utility of the Web-One guidelines to incorporate web-applications.</p>
+            <br><hr><br>
+            <h3>Get Started</h3>
+            <p>To include Metaphor in your next project simply run the following command:</p>
+            <pre class="prettyprint lang-bash" style="padding:20px; border-radius: 3px;"><code>$ bower install metaphor --save</code><br></pre>
+            <br><hr><br>
+            <h3>Features</h3>
+            <p>Metaphor gives you a comprehensive collection of HTML, CSS, and JS components which are simple to use, easy to customize and extendable.</p>
+            <p>For developers, Metaphor provides the flexibility to code in any programming language of choice and streamlines the process by providing reusable UI components. This allows developers to focus on functionality while ensuring their application adheres to compliance and branding guidelines.</p>
+            <br><hr><br>
+            <h3>Open Source</h3>
+            <p>Metaphor is a completely open source to encourage campus collaboration. Metaphor uses the MIT License. Interested in contributing or learning more? <a href="https://github.com/alexhernandez/metaphor.git">Check out Metaphor on <i class="fa fa-github" aria-hidden="true"></i> Github.</a></p>
+          </div>
+          <div class="col-sm-4 col-sm-pull-8">
+            <blockquote>"An elegantly crafted UI Kit for CSUN branded prototypes &amp; applications."</blockquote>
+            <br><br>
+            <p>Interested in contributing or learning more?<br><a href="https://github.com/alexhernandez/metaphor.git">Check out Metaphor on <i class="fa fa-github" aria-hidden="true"></i> Github.</a></p>
+          </div>
+        </div>
+        <br><br>
+      </div>
+    </div>
+  </main>
+
   <div class="metalab-footer">
     <div class="metalab-wrapper">
       <div class="container">
@@ -140,7 +156,6 @@
 
     ga('create', 'UA-77781058-1', 'auto');
     ga('send', 'pageview');
-
   </script>
 </body>
 </html>

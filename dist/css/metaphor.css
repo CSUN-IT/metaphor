@@ -277,6 +277,9 @@ p, ul, ol, pre, code {
   font-size: 1rem;
   color: inherit; }
 
+a {
+  color: #d00d2d; }
+
 ul {
   list-style-type: square; }
 
@@ -290,6 +293,18 @@ ul, ol {
 hr {
   border: 0;
   border-top: 1px solid rgba(74, 74, 74, 0.4); }
+
+.emphasis {
+  font-size: 18px;
+  line-height: 1.6; }
+
+blockquote {
+  padding: 10px 30px;
+  margin: 0;
+  font-size: 20px;
+  font-style: italic;
+  color: #666;
+  border-left: 1px solid #d00d2d; }
 
 .container {
   margin-left: auto;
@@ -2108,8 +2123,11 @@ input[type="button"].btn-block {
 .type--white {
   color: #fff; }
 
+.type--red {
+  color: #d00d2d; }
+
 .bg--light-gray {
-  background-color: #efefef; }
+  background-color: #f7f7f7; }
 
 .metalab-wrapper {
   position: absolute;

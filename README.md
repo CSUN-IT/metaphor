@@ -1,6 +1,8 @@
 # Metaphor UI Kit
-
 An elegantly crafted UI Kit for CSUN branded prototypes & applications.
+
+## Introduction
+Metaphor is a user interface kit (UI Kit) that ensures web applications maintain consistency with CSUN branding and identity standards. Metaphor was built specifically to improve the mobile user experience and assures compliance with ADA guidelines on all platforms. It will also extend the current utility of the Web-One guidelines to incorporate web-applications.
 
 ## Getting Started
 
