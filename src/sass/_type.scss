@@ -1,17 +1,7 @@
 // TYPOGRAPHY
 //
 
-// DESKTOP
-// small: 12px / 1.4
-// base: 15px / 1.5
-// emphasis: 18px / 1.6
-
-// MOBILE
-// small: 12px / 1.5
-// base: 15px / 1.5
-// emphasis: 18px / 1.6
-
-
+// BASE
 html { font-size: $font-size-root; }
 
 body {
@@ -23,6 +13,7 @@ body {
   color: #4a4a4a;
 }
 
+// HEADERS
 h1,h2,h3,h4,h5,h6 {
   margin-bottom: modular-scale(-1);
   font-family: $font-brand;
@@ -37,7 +28,6 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-// HEADERS
 h1, .h1 { font-size: modular-scale(5); }
 h2, .h2 { font-size: modular-scale(4); }
 h3, .h3 { font-size: modular-scale(3); }
@@ -81,6 +71,7 @@ ul, ol { line-height: 1.6; }
   list-style: none;
 }
 
+// MISC
 hr {
   border: 0;
   border-top: 1px solid rgba(#4a4a4a, .4);
