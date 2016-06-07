@@ -2175,10 +2175,10 @@ textarea {
 .img-text--control {
   padding-right: 0;
   margin-left: 70px;
-  border-bottom: solid 1px #808080; }
+  border-bottom: solid 1px #ccc; }
   @media screen and (min-width: 1000px) {
     .img-text--control {
-      margin-left: 40px; } }
+      margin-left: 50px; } }
 
 .metalab-wrapper {
   position: absolute;
