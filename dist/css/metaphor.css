@@ -2162,15 +2162,23 @@ textarea {
   color: #d00d2d; }
 
 .type--cream {
-  color: #d9d4c5; }
+  color: #d8d2c4; }
 
 .bg--light-gray {
-  background-color: #f7f7f7; }
+  background-color: #d9d4c5; }
 
 .header--sm {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+.img-text--control {
+  padding-right: 0;
+  margin-left: 70px;
+  border-bottom: solid 1px #808080; }
+  @media screen and (min-width: 1000px) {
+    .img-text--control {
+      margin-left: 40px; } }
 
 .metalab-wrapper {
   position: absolute;

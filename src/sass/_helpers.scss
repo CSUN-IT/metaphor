@@ -58,10 +58,22 @@
 .type--red { color: $red; }
 .type--cream { color: $cream; }
 
-.bg--light-gray { background-color: #f7f7f7; }
+
+.bg--light-gray { background-color: #d9d4c5; }
 
 .header--sm {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
+
+
+.img-text--control {
+  padding-right: 0;
+  margin-left: 70px;
+  border-bottom: solid 1px #808080;
+  @media screen and (min-width: 1000px){
+    margin-left: 40px;
+  }
+}
+
