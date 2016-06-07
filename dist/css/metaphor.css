@@ -2166,9 +2166,17 @@ textarea {
 
 .header--sm {
   font-size: 15px;
-  color: #d9d4c5;
   text-transform: uppercase;
   letter-spacing: 1px; }
+
+.header--tan {
+  color: #d9d4c5; }
+
+.p-l-40 {
+  padding-left: 40px; }
+
+.bb-2 {
+  border-bottom: solid 1px #808080; }
 
 .metalab-wrapper {
   position: absolute;
