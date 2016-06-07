@@ -56,7 +56,8 @@
 
 .type--white { color: #fff; }
 .type--red { color: $red; }
-.type--cream {color: $cream; }
+.type--cream { color: $cream; }
+
 
 .bg--light-gray { background-color: #d9d4c5; }
 
@@ -66,6 +67,7 @@
   letter-spacing: 1px;
 }
 
+
 .img-text--control {
   padding-right: 0;
   margin-left: 70px;
@@ -74,3 +76,4 @@
     margin-left: 40px;
   }
 }
+
