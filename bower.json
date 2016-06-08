@@ -1,6 +1,6 @@
 {
   "name": "metaphor",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "An elegantly crafted UI Kit for CSUN branded prototypes & applications",
   "keywords": [
     "csun",
@@ -24,6 +24,7 @@
     "font-awesome": "fontawesome#^4.6.2"
   },
   "dependencies": {
-    "jquery": "^2.2.3"
+    "jquery": "^2.2.3",
+    "jquery-ui": "^1.11.4"
   }
 }

@@ -1,5 +1,6 @@
 (function($) {
 
+  // NAV
   var navBtn = $(".primary-nav__btn");
   var navLinks = $(".primary-nav__links");
 
@@ -22,6 +23,14 @@
     } else {
       subNav.removeClass("sub-nav--fixed");
     }
+  });
+
+  // DATEPICKER
+  var d = $( ".datepicker" );
+  d.datepicker({
+    minDate: new Date(),
+    nextText: '<i class="fa fa-caret-right"></i>',
+    prevText: '<i class="fa fa-caret-left"></i>'
   });
 
 })(jQuery);

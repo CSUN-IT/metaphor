@@ -17,9 +17,11 @@ var basePath = {
 
 elixir(function(mix) {
   mix.copy(basePath.bower + '/jquery/dist/jquery.min.js', 'src/js/vendor/jquery.js');
+  mix.copy(basePath.bower + '/jquery-ui/ui/minified/datepicker.min.js', 'src/js/vendor/datepicker.js');
 
   mix.scripts([
     'vendor/jquery.js',
+    'vendor/datepicker.js',
     'scripts.js'
   ], basePath.scripts.dist + '/metaphor.js', basePath.scripts.src );
 
