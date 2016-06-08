@@ -1,0 +1,28 @@
+
+
+.img--round	{
+	width: 100px;
+	height: 100px;
+	border-radius: 100px;
+}
+
+.badge__img {
+	position: relative;
+	top: -19px;
+	left: 32px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	background-color: $red;
+	color: white;
+	box-sizing: border-box;
+
+	
+
+}
+.badge--label {
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 5px;
+	box-sizing: border-box;
+}
