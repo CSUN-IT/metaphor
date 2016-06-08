@@ -1,0 +1,45 @@
+// PANELS
+//
+
+$panel-colors: (
+  red: $red,
+  cream: $cream,
+  dark-gray: $dark-gray
+);
+
+.panel {
+  margin-bottom: modular-scale(1);
+  border: 1px solid rgba(#4a4a4a, .4);
+  border-radius: $border-radius;
+
+  @each $name, $hex in $panel-colors {
+    &--#{$name} {
+      border-color: $hex;
+      .panel__header {
+        color: $white;
+        background-color: $hex;
+        border-color: $hex;
+      }
+    }
+  }
+}
+
+.panel__header {
+  padding: modular-scale(-2) modular-scale(0);
+  border-bottom: 1px solid rgba(#4a4a4a, .4);
+
+  h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+  }
+}
+
+.panel__content {
+  padding: modular-scale(0);
+}
+
+.panel__footer {
+  @extend .milli;
+  padding: modular-scale(-1);
+  color: rgba(#4a4a4a, .6);
+  background-color: #efefef;
+}

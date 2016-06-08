@@ -35,16 +35,16 @@ h4, .h4 { font-size: modular-scale(2); }
 h5, .h5 { font-size: modular-scale(1); }
 h6, .h6 { font-size: modular-scale(0); }
 
-.page-header {
-  padding-bottom: modular-scale(0);
-  margin-bottom: modular-scale(2);
-  border-bottom: 1px solid #ccc;
-}
-
 // DISPLAY TYPE
 .giga { font-size: modular-scale(8); }
 .mega { font-size: modular-scale(7); }
 .kilo { font-size: modular-scale(6); }
+
+.type-header {
+  padding-bottom: modular-scale(-2);
+  margin-bottom: modular-scale(2);
+  border-bottom: 1px solid rgba(#4a4a4a, .4);
+}
 
 // SMALL TYPE
 small,
@@ -73,13 +73,9 @@ ul, ol { line-height: 1.6; }
 
 // MISC
 hr {
-  border: 0;
+  margin-bottom: modular-scale(1);
+  border: 0 none;
   border-top: 1px solid rgba(#4a4a4a, .4);
-}
-
-.emphasis {
-  font-size: 18px;
-  line-height: 1.6;
 }
 
 blockquote {
@@ -90,3 +86,12 @@ blockquote {
   color: #666;
   border-left: 1px solid $red;
 }
+
+// TYPE MODIFIERS
+.type--emphasis { font-size: 18px; line-height: 1.6; }
+.type--strike { text-decoration: line-through; }
+.type--left { text-align: left; }
+.type--center { text-align: center; }
+.type--right { text-align: right; }
+.type--thin { font-weight: 100; }
+.type--marginless { margin: 0; }

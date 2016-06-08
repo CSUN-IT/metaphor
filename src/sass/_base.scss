@@ -2,20 +2,16 @@
 // Builds upon Normalize to set a opinionated baseline for HTML & CSS
 
 // ENFORCE BOX MODEL
-html {
-  box-sizing: border-box;
-}
-html { font-size: $font-size-root; }
+html { box-sizing: border-box; }
 
-
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
 // SETS DEFAULT BG COLOR
-body {
-  background-color: #fff;
-}
+body { background-color: #fff; }
 
 // AVOID MARGIN COLLAPSE
 h1, h2, h3, h4, h5, h6,
@@ -26,9 +22,7 @@ fieldset, pre, table {
 }
 
 // VERTICALLY CENTERS IMGS
-img {
-  vertical-align: middle;
-}
+img { vertical-align: middle; }
 
 // SETS DEFAULT TABLE STYLES
 table { background-color: #fff; }

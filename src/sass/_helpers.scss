@@ -39,13 +39,6 @@
   height: auto;
 }
 
-.type--marginless { margin: 0; }
-
-.type--left { text-align: left; }
-.type--center { text-align: center; }
-.type--right { text-align: right; }
-
-.type--thin { font-weight: 100; }
 .type--hide {
   font: "0/0" a;
   color: transparent;
@@ -54,7 +47,15 @@
   border: 0;
 }
 
+// COLORS
 .type--white { color: #fff; }
 .type--red { color: $red; }
+.type--cream { color: $cream; }
 
 .bg--light-gray { background-color: #f7f7f7; }
+
+.header--sm {
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
