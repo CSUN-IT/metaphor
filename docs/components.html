@@ -367,6 +367,87 @@
 
           <br><br><hr><br><br>
 
+          <div class="row">
+            <div class="col-sm-3">
+              <h2 id="modals" class="h3">Modals</h2>
+            </div>
+            <div class="col-sm-9">
+
+              <button class="btn btn-primary" data-modal="#test">Modal Powers Activate!!!</button>
+              <button class="btn btn-default" data-modal="#test1">And Another One</button>
+              <br>
+              <div id="test" class="modal__outer">
+                <div class="modal">
+                  <div class="modal__header">
+                    <strong>Modal Title</strong>
+                  </div>
+                  <div class="modal__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore, aliquam nesciunt praesentium nemo amet laudantium voluptatem, libero consectetur doloribus blanditiis sint asperiores provident sequi minus atque, vitae minima tenetur!</div>
+                  <div class="modal__footer">
+                    <div class="pull-right">
+                      <button class="btn btn-default" data-modal-close="#test">Cancel</button>
+                      <button class="btn btn-primary">Submit</button>
+                    </div>
+                  </div>
+                  <div class="modal__close" data-modal-close="#test"><i class="fa fa-times" aria-hidden="true"></i></div>
+                </div>
+              </div>
+
+              <div id="test1" class="modal__outer">
+                <div class="modal modal--sm">
+                  <div class="modal__header">
+                    <h3>Login</h3>
+                  </div>
+                  <div class="modal__content">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <div class="form__group">
+                          <label class="label--required" for="example1">Email</label>
+                          <input id="example1" type="text" placeholder="Email">
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="form__group">
+                          <label class="label--required" for="example2">Password</label>
+                          <input id="example2" type="password" placeholder="Password">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal__footer">
+                    <div class="pull-right">
+                      <button class="btn btn-default" data-modal-close="#test1">Cancel</button>
+                      <button class="btn btn-primary">Sign in</button>
+                    </div>
+                  </div>
+                  <div class="modal__close" data-modal-close="#test1"><i class="fa fa-times" aria-hidden="true"></i></div>
+                </div>
+              </div>
+
+            <br>
+
+            <pre class="prettyprint" style="padding:20px; border-radius: 3px; font-size: 18px;"><code class="lang-markup">&lt;button class=&quot;btn btn-default&quot; data-modal=&quot;#test&quot;&gt;Modal Powers Activate!!!&lt;/button&gt;
+
+&lt;div id=&quot;test&quot; class=&quot;modal__outer&quot;&gt;
+  &lt;div class=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modal__header&quot;&gt;
+      &lt;strong&gt;Modal Title&lt;/strong&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal__content&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore, aliquam nesciunt praesentium nemo amet laudantium voluptatem, libero consectetur doloribus blanditiis sint asperiores provident sequi minus atque, vitae minima tenetur!&lt;/div&gt;
+    &lt;div class=&quot;modal__footer&quot;&gt;
+      &lt;div class=&quot;pull-right&quot;&gt;
+        &lt;button class=&quot;btn btn-default&quot; data-modal-close=&quot;#test&quot;&gt;Cancel&lt;/button&gt;
+        &lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal__close&quot; data-modal-close=&quot;#test&quot;&gt;&lt;i class=&quot;fa fa-times&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+          </div>
+          </div>
+
+          <br><br><hr><br><br>
+
           <p><em>More Docs Coming Soon... ;D</em></p>
 
           </div>

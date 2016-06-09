@@ -11,7 +11,11 @@ html { box-sizing: border-box; }
 }
 
 // SETS DEFAULT BG COLOR
-body { background-color: #fff; }
+body {
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+}
 
 // AVOID MARGIN COLLAPSE
 h1, h2, h3, h4, h5, h6,

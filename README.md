@@ -12,6 +12,12 @@ Install Metaphor with [Bower](http://bower.io) package manager into your project
   $ bower install metaphor --save
   ```
 
+In your project add the following paths:
+
+  ```html
+  <link rel="stylesheet" href="../project/path/to/metaphor.css">
+  <script src="../project/path/to/metaphor.js"></script>
+  ```
 ## Bugs and Feature Requests
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/alexhernandez/metaphor/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/alexhernandez/metaphor/issues/new).

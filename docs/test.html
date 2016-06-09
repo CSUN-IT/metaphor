@@ -23,28 +23,24 @@
 </head>
 <body onload="prettyPrint()">
 
-  <div style="width: 1000px; margin:0 auto;">
-    <div class="panel">
-      <div class="panel__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id placeat ipsam laboriosam. Magni praesentium cupiditate et officiis, ex voluptatibus laboriosam quod, sit repudiandae, eum voluptatum minus quidem tempore laudantium? Et!</div>
-    </div>
-    <div class="panel">
-      <div class="panel__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id placeat ipsam laboriosam. Magni praesentium cupiditate et officiis, ex voluptatibus laboriosam quod, sit repudiandae, eum voluptatum minus quidem tempore laudantium? Et!</div>
-      <div class="panel__footer"><strong>Pro Tip!</strong> Smiling Makes Others Smile :)</div>
-    </div>
-    <div class="panel">
-      <div class="panel__header">
-        <strong>Panel</strong>
+  <button data-modal="#test">Modal Button</button>
+
+  <div id="test" class="modal__outer">
+    <div class="modal">
+      <div class="modal__header">
+        <strong>Modal Title</strong>
       </div>
-      <div class="panel__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id placeat ipsam laboriosam. Magni praesentium cupiditate et officiis, ex voluptatibus laboriosam quod, sit repudiandae, eum voluptatum minus quidem tempore laudantium? Et!</div>
-    </div>
-    <div class="panel panel--red">
-      <div class="panel__header">
-        <strong>Panel Alert</strong>
+      <div class="modal__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore, aliquam nesciunt praesentium nemo amet laudantium voluptatem, libero consectetur doloribus blanditiis sint asperiores provident sequi minus atque, vitae minima tenetur!</div>
+      <div class="modal__footer">
+        <div class="pull-right">
+          <button class="btn btn-default" data-modal-close="#test">Cancel</button>
+          <button class="btn btn-primary">Submit</button>
+        </div>
       </div>
-      <div class="panel__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id placeat ipsam laboriosam. Magni praesentium cupiditate et officiis, ex voluptatibus laboriosam quod, sit repudiandae, eum voluptatum minus quidem tempore laudantium? Et!</div>
-      <div class="panel__footer"><strong>Warning:</strong> Are You Sure You Want To Do That?</div>
+      <div class="modal__close" data-modal-close="#test"><i class="fa fa-times" aria-hidden="true"></i></div>
     </div>
   </div>
 
+  <script src="../dist/js/metaphor.js"></script>
 </body>
 </html>
