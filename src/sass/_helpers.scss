@@ -67,7 +67,6 @@
   letter-spacing: 1px;
 }
 
-
 .img-text--control {
   padding-right: 0;
   margin-left: 70px;
@@ -77,3 +76,44 @@
   }
 }
 
+
+
+.timeline {
+  // height: 700px;
+  list-style: none;
+}
+@media (min-width:520px){
+  .timeline > li {
+    position: relative;
+    height: 30px;
+    margin: 0;
+    overflow: hidden;
+  }
+  .timeline-date {
+    float: left;
+    width: 110px;
+  }
+  .timeline-content {
+    float: left;
+    padding-left: 30px;
+    border-left: 1px $red solid;
+
+  }
+
+  .timeline-content::before {
+    position: absolute;
+    left: 105px;
+    width: 10px;
+    height: 10px;
+    margin-top: 9px;
+    content: "";
+    background: #fff;
+    border: 2px solid $red;
+    border-radius: 100%;
+  }
+
+  .timeline-content::after {
+    width: 500px;
+
+  }
+}
