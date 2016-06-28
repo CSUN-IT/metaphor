@@ -76,13 +76,10 @@
   }
 }
 
-
-
 .timeline {
-  // height: 700px;
   list-style: none;
 }
-@media (min-width:520px){
+@media (min-width:520px) {
   .timeline > li {
     position: relative;
     height: 30px;
@@ -97,7 +94,6 @@
     float: left;
     padding-left: 30px;
     border-left: 1px $red solid;
-
   }
 
   .timeline-content::before {
