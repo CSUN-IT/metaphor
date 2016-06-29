@@ -968,6 +968,7 @@ blockquote {
 
 .header {
   position: relative;
+  z-index: 1;
   height: 100px; }
 
 .section {
@@ -978,15 +979,18 @@ blockquote {
   margin-top: -100px; }
 
 .main > .section-hero {
+  position: relative;
+  z-index: 0;
   text-shadow: 0 2px 2px rgba(74, 74, 74, 0.5);
+  background-color: #252525;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
   @media (min-width: 992px) {
     .main > .section-hero {
       min-height: 100px;
-      padding-top: 250px;
-      padding-bottom: 150px;
+      padding-top: 275px;
+      padding-bottom: 175px;
       margin-top: -125px; } }
 
 .main > .section-headline {
