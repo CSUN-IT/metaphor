@@ -1,0 +1,53 @@
+// Tables
+//
+
+.table {
+  width: 100%;
+  max-width: 100%;
+  // overflow: hidden;
+  margin-bottom: modular-scale(1);
+  border-radius: $border-radius;
+}
+
+.table--bordered {
+  th, td {
+    border: 1px solid $default;
+  }
+  thead {
+    th {
+      border-bottom: 2px solid $default;
+    }
+  }
+}
+
+.table--underlined {
+  th, td {
+    border-bottom: 1px solid $default;
+  }
+}
+
+.table--padded {
+  th, td { padding: 5px 10px; }
+}
+
+.table--striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: rgba($default, .5);
+  }
+}
+
+.table--hover {
+  tbody tr {
+    &:hover {
+      background-color: $default;
+    }
+  }
+}
+
+// WRAPPER CLASS FOR RESPONSIVE TABLES
+.table--responsive {
+  display: block;
+  width: 100%;
+  min-height: 1px;
+  overflow-x: auto;
+}

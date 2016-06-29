@@ -17,6 +17,14 @@
       border-bottom: 1px solid rgba(#4a4a4a, .4);
     }
   }
+
+  &--inverse {
+    color: #fff;
+
+    .sub-nav-wrapper {
+      border-bottom: 1px solid rgba(#fff, .4);
+    }
+  }
 }
 
 .sub-nav--fixed {
@@ -52,7 +60,7 @@
   margin-top: 13px;
   font-size: 20px;
   a {
-    color: #4a4a4a;
+    color: inherit;
     text-decoration: none;
   }
 }
@@ -100,7 +108,7 @@
   display: block;
   padding: 8px 25px;
   font-size: 14px;
-  color: #4a4a4a;
+  color: inherit;
   text-decoration: none;
   border-radius: 3px;
 

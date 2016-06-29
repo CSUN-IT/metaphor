@@ -23,21 +23,59 @@
 </head>
 <body onload="prettyPrint()">
 
-  <button data-modal="#test">Modal Button</button>
-
-  <div id="test" class="modal__outer">
-    <div class="modal">
-      <div class="modal__header">
-        <strong>Modal Title</strong>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <ul class="list--unstyled">
+          <li>Cras justo odio</li>
+          <li>Dapibus ac facilisis in</li>
+          <li>Morbi leo risus</li>
+          <li>Porta ac consectetur ac</li>
+        </ul>
+        <ul class="list">
+          <li class="list__item">Cras justo odio</li>
+          <li class="list__item">Dapibus ac facilisis in</li>
+          <li class="list__item">Morbi leo risus</li>
+          <li class="list__item">Porta ac consectetur ac</li>
+        </ul>
+        <ul class="list list--arrows list--hover">
+          <li class="list__item">Cras justo odio</li>
+          <li class="list__item">Dapibus ac facilisis in</li>
+          <li class="list__item">Morbi leo risus</li>
+          <li class="list__item">Porta ac consectetur ac</li>
+          <li class="list__item">Vestibulum at eros</li>
+        </ul>
       </div>
-      <div class="modal__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore, aliquam nesciunt praesentium nemo amet laudantium voluptatem, libero consectetur doloribus blanditiis sint asperiores provident sequi minus atque, vitae minima tenetur!</div>
-      <div class="modal__footer">
-        <div class="pull-right">
-          <button class="btn btn-default" data-modal-close="#test">Cancel</button>
-          <button class="btn btn-primary">Submit</button>
-        </div>
+      <div class="col-sm-9">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore adipisci beatae quos ipsum id. Voluptas incidunt quia, ipsum iure vitae nam sunt cumque ab perspiciatis eum velit alias totam fugiat!</p>
+        <table class="table table--striped table--bordered table--padded table--hover">
+          <thead>
+            <tr>
+              <th>Deal One</th>
+              <th>Deal Two</th>
+              <th>Deal Three</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hotness</td>
+              <td>Un-Hotness</td>
+              <td>Re-Hotness</td>
+            </tr>
+            <tr>
+              <td>Hotness</td>
+              <td>Un-Hotness</td>
+              <td>Re-Hotness</td>
+            </tr>
+            <tr>
+              <td>Hotness</td>
+              <td>Un-Hotness</td>
+              <td>Re-Hotness</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates id recusandae dicta dolores facere quam, ipsum quidem ex repellendus voluptas reiciendis accusantium possimus autem, sequi quos reprehenderit natus consequuntur asperiores!</p>
       </div>
-      <div class="modal__close" data-modal-close="#test"><i class="fa fa-times" aria-hidden="true"></i></div>
     </div>
   </div>
 

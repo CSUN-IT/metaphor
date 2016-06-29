@@ -1,6 +1,9 @@
 // PRIMARY NAV
 //
 
+// NOTES:
+// CONSIDER NAV OPAQUE OPTIONS
+
 .primary-nav {
   @include clearfix();
   position: relative;
@@ -8,7 +11,7 @@
 }
 
 .primary-nav--cream {
-  background-color: rgba($cream, .95);
+  background-color: rgba($cream, .9);
 
   .bar {
     background-color: $red;
