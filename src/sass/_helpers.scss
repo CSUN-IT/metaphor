@@ -33,7 +33,7 @@
   border: 0;
 }
 
-.img-fluid {
+.img--fluid {
   display: block;
   max-width: 100%;
   height: auto;
@@ -51,6 +51,7 @@
 .type--white { color: #fff; }
 .type--red { color: $red; }
 .type--cream { color: $cream; }
+.type--gray { color: #666; }
 
 .bg--light-gray { background-color: #f7f7f7; }
 
@@ -58,4 +59,8 @@
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.cf {
+  @include clearfix();
 }

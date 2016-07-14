@@ -33,7 +33,7 @@
   // DATEPICKER
   var d = $( ".datepicker" );
   d.datepicker({
-    minDate: new Date(),
+    // minDate: new Date(),
     nextText: '<i class="fa fa-caret-right"></i>',
     prevText: '<i class="fa fa-caret-left"></i>'
   });
@@ -51,4 +51,12 @@
     $(document).find('.modal__outer.modal--show').removeClass('modal--show');
   });
 
+  // Close Alerts
+  var closeLinks = $('a[data-alert-close]');
+  closeLinks.on('click', closeHandleMethod);
+
+
+  function closeHandleMethod(e) {
+    $(this).parent().hide();
+  }
 })(jQuery);

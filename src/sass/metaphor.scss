@@ -14,6 +14,7 @@
 // CORE
 @import "base";
 @import "type";
+@import "code";
 @import "grid";
 
 // COMPONENTS
@@ -27,10 +28,11 @@
 @import "datepicker";
 @import "feature";
 @import "modals";
+@import "progress";
 @import "helpers";
 
 // Dependencies
-// @import "vendor/font-awesome/font-awesome";
+@import "vendor/font-awesome/font-awesome.scss";
 
 // THEME
 @import "theme/meta-footer";

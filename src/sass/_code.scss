@@ -1,0 +1,48 @@
+// CODE
+//
+
+code,
+pre {
+  font-family: $font-code;
+}
+
+// Inline Code
+code {
+  padding: .2rem .4rem;
+  font-size: 90%;
+  color: $red;
+  background-color: rgba($red, .1);
+  border-radius: 3px;
+}
+
+pre {
+  display: block;
+  background-color: #f7f7f7;
+  overflow-x: scroll;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  padding: 25px;
+
+  code {
+    padding: 0;
+    background-color: transparent;
+    border-radius: 0;
+  }
+}
+
+// // Blocks of code
+// pre {
+//   margin-top: 0;
+//   margin-bottom: 1rem;
+//   line-height: $line-height;
+//   color: $pre-color;
+//
+//   // Account for some code outputs that place code tags in pre tags
+//   code {
+//     padding: 0;
+//     font-size: inherit;
+//     color: inherit;
+//     background-color: transparent;
+//     border-radius: 0;
+//   }
+// }

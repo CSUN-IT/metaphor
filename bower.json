@@ -1,6 +1,6 @@
 {
   "name": "metaphor",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "An elegantly crafted UI Kit for CSUN branded prototypes & applications",
   "keywords": [
     "csun",
@@ -13,7 +13,7 @@
     "web",
     "ui"
   ],
-  "homepage": "http://alexhernandez.github.io/metaphor",
+  "homepage": "http://csun-metalab.github.io/metaphor",
   "main": [
     "src/js/metaphor.js",
     "src/sass/metaphor.scss"
@@ -26,6 +26,6 @@
   },
   "dependencies": {
     "jquery": "^2.2.3",
-    "jquery-ui": "^1.11.4"
+    "jquery-ui": "jquery.ui#^1.12.0"
   }
 }

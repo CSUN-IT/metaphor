@@ -36,11 +36,12 @@ h5, .h5 { font-size: modular-scale(1); }
 h6, .h6 { font-size: modular-scale(0); }
 
 // DISPLAY TYPE
+.giga, .mega, .kilo { letter-spacing: -1px; }
 .giga { font-size: modular-scale(8); }
 .mega { font-size: modular-scale(7); }
 .kilo { font-size: modular-scale(6); }
 
-.type-header {
+.type--header {
   padding-bottom: modular-scale(-2);
   margin-bottom: modular-scale(2);
   border-bottom: 1px solid rgba(#4a4a4a, .4);
@@ -97,3 +98,4 @@ blockquote {
 .type--bold { font-weight: bold; }
 .type--italic { font-style: italic; }
 .type--marginless { margin: 0; }
+.type--uppercase { text-transform: uppercase; letter-spacing: 2px; }

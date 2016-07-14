@@ -1,31 +1,22 @@
-var elixir = require('laravel-elixir');
-var scssLint = require('laravel-elixir-scss-lint');
+'use strict';
 
-// Set Base Paths
-var basePath = {
-  bower: './bower_components',
-  styles: {
-    src: './src/sass',
-    dist: './dist/css'
-  },
-  scripts: {
-    src: './src/js',
-    dist: './dist/js'
-  },
-  fonts: './dist/fonts'
-};
+const elixir = require('laravel-elixir');
+let bowerPath = 'bower_components';
 
-elixir(function(mix) {
-  mix.copy(basePath.bower + '/jquery/dist/jquery.min.js', 'src/js/vendor/jquery.js');
-  mix.copy(basePath.bower + '/jquery-ui/ui/minified/datepicker.min.js', 'src/js/vendor/datepicker.js');
+elixir.config.assetsPath = 'src';
+elixir.config.publicPath = 'dist';
+
+elixir((mix) => {
+  mix.copy(`${bowerPath}/jquery/dist/jquery.min.js`, 'src/js/vendor/jquery.js');
+  mix.copy(`${bowerPath}/jquery-ui/ui/widgets/datepicker.js`, 'src/js/vendor/datepicker.js');
+  mix.copy(`${bowerPath}/font-awesome/scss`, 'src/sass/vendor/font-awesome');
+  mix.copy(`${bowerPath}/font-awesome/fonts`, 'dist/fonts');
 
   mix.scripts([
     'vendor/jquery.js',
     'vendor/datepicker.js',
     'scripts.js'
-  ], basePath.scripts.dist + '/metaphor.js', basePath.scripts.src );
+  ],'dist/js/metaphor.js');
 
-  mix.sass('metaphor.scss', basePath.styles.dist, basePath.styles.src);
-
-  mix.scssLint();
+  mix.sass('metaphor.scss');
 });
