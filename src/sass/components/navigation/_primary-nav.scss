@@ -9,35 +9,9 @@
   position: relative;
   z-index: 9999;
   background-color: rgba(#fff, .95);
-}
-
-.primary-nav--cream {
-  background-color: rgba($cream, .9);
-
-  .bar {
-    background-color: $red;
-  }
-}
-
-.primary-nav--black {
-  background-color: rgba($black, .9);
-
-  .bar {
-    background-color: #fff;
-  }
-
-  .primary-nav__link {
-    color: #fff;
-  }
-
-  .primary-nav__brand {
-    background-image: $csun-logo--inverse;
-    background-repeat: no-repeat;
-    background-size: 73px 20px;
-
-    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-      background-image: $csun-logo-retina--inverse;
-    }
+  border-bottom: 1px solid rgba(#4a4a4a, .1);
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    border-bottom: 0;
   }
 }
 
@@ -155,6 +129,36 @@
       background-color: transparent;
       border-color: $red;
       border-radius: 0;
+    }
+  }
+}
+
+.primary-nav--cream {
+  background-color: rgba($cream, .9);
+
+  .bar {
+    background-color: $red;
+  }
+}
+
+.primary-nav--black {
+  background-color: rgba($black, .9);
+
+  .bar {
+    background-color: #fff;
+  }
+
+  .primary-nav__link {
+    color: #fff;
+  }
+
+  .primary-nav__brand {
+    background-image: $csun-logo--inverse;
+    background-repeat: no-repeat;
+    background-size: 73px 20px;
+
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+      background-image: $csun-logo-retina--inverse;
     }
   }
 }

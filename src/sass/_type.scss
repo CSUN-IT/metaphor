@@ -28,18 +28,27 @@ h1,h2,h3,h4,h5,h6 {
   }
 }
 
-h1, .h1 { font-size: modular-scale(5); }
-h2, .h2 { font-size: modular-scale(4); }
-h3, .h3 { font-size: modular-scale(3); }
-h4, .h4 { font-size: modular-scale(2); }
-h5, .h5 { font-size: modular-scale(1); }
-h6, .h6 { font-size: modular-scale(0); }
+h1 { font-size: modular-scale(5); }
+h2 { font-size: modular-scale(4); }
+h3 { font-size: modular-scale(3); }
+h4 { font-size: modular-scale(2); }
+h5 { font-size: modular-scale(1); }
+h6 { font-size: modular-scale(0); }
 
-// DISPLAY TYPE
-.giga, .mega, .kilo { letter-spacing: -1px; }
-.giga { font-size: modular-scale(8); }
-.mega { font-size: modular-scale(7); }
-.kilo { font-size: modular-scale(6); }
+// DISPLAY TYPE (--REVISIT)
+@media (min-width: map-get($grid-breakpoints, "md")) {
+  .giga, .mega, .kilo { letter-spacing: -1px; }
+  .giga { font-size: modular-scale(8); }
+  .mega { font-size: modular-scale(7); }
+  .kilo { font-size: modular-scale(6); }
+
+  .h1 { font-size: modular-scale(5); }
+  .h2 { font-size: modular-scale(4); }
+  .h3 { font-size: modular-scale(3); }
+  .h4 { font-size: modular-scale(2); }
+  .h5 { font-size: modular-scale(1); }
+  .h6 { font-size: modular-scale(0); }
+}
 
 .type--header {
   padding-bottom: modular-scale(-2);
@@ -59,8 +68,14 @@ p, ul, ol, pre, code {
   color: inherit;
 }
 
+// (--REVISIT)
+// section p:last-child {
+//   background: $red;
+// }
+
 a {
   color: $red;
+  cursor: pointer;
 }
 
 // LISTS

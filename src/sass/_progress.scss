@@ -4,16 +4,15 @@
 .progress {
   display: block;
   width: 100%;
-  height: 13px;
   background-color: #efefef;
-  border-radius: 13px;
+  border-radius: 10px;
 }
 
 .progress__bar {
   width: inherit;
-  height: inherit;
-  border-radius: inherit;
+  height: 10px;
   background-color: #4a4a4a;
+  border-radius: inherit;
 
   &--success { background-color: $green; }
   &--danger { background-color: $danger; }

@@ -20,6 +20,7 @@ label {
 select,
 textarea,
 input[type="text"],
+input[type="email"],
 input[type="search"],
 input[type="password"] {
   display: block;
@@ -37,6 +38,7 @@ input[type="password"] {
 
 select,
 input[type="text"],
+input[type="email"],
 input[type="search"],
 input[type="submit"],
 input[type="password"] {

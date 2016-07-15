@@ -5,8 +5,8 @@
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Metaphor by META+Lab</title>
-  <meta name="description" content="An elegantly crafted UI Kit for CSUN branded prototypes &amp; applications">
+  <title>Documentation | Metaphor by META+Lab</title>
+  <meta name="description" content="Development Guidelines for Developers Implementing Metaphors UI Components.">
 
   <!-- FONT LIBS -->
   <script src="//use.typekit.net/gfb2mjm.js"></script>
@@ -51,38 +51,38 @@
         <div class="col-sm-3">
           <p><strong>Introduction:</strong></p>
           <ul class="list list--arrows list--hover">
-            <li class="list__item"><a href="#">Vision</a></li>
-            <li class="list__item"><a href="#">Getting Started</a></li>
-            <li class="list__item"><a href="#">Open Source</a></li>
+            <li class="list__item"><a href="#vision">Vision</a></li>
+            <li class="list__item"><a href="#getting-started">Getting Started</a></li>
+            <li class="list__item"><a href="#open-source">Open Source</a></li>
           </ul>
           <br>
           <p><strong>Components:</strong></p>
           <ul class="list list--arrows list--hover">
-            <li class="list__item"><a href="#">Grid System</a></li>
-            <li class="list__item"><a href="#">Typography</a></li>
-            <li class="list__item"><a href="#">Nav</a></li>
-            <li class="list__item"><a href="#">Buttons</a></li>
-            <li class="list__item"><a href="#">Panels</a></li>
-            <li class="list__item"><a href="#">Alerts</a></li>
-            <li class="list__item"><a href="#">Lists</a></li>
-            <li class="list__item"><a href="#">Tables</a></li>
-            <li class="list__item"><a href="#">Forms</a></li>
-            <li class="list__item"><a href="#">Modals</a></li>
+            <li class="list__item"><a href="#grid">Grid System</a></li>
+            <li class="list__item"><a href="#type">Typography</a></li>
+            <li class="list__item"><a href="#nav">Nav</a></li>
+            <li class="list__item"><a href="#buttons">Buttons</a></li>
+            <li class="list__item"><a href="#panels">Panels</a></li>
+            <li class="list__item"><a href="#alerts">Alerts</a></li>
+            <li class="list__item"><a href="#lists">Lists</a></li>
+            <li class="list__item"><a href="#tables">Tables</a></li>
+            <li class="list__item"><a href="#forms">Forms</a></li>
+            <li class="list__item"><a href="#modals">Modals</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
-          <div class="alert alert--warning"><strong>Heads Up!</strong> Components &amp; Documentation are subject to change until v1.0 release.
+          <div class="alert alert--warning"><strong>Heads Up!</strong> Components &amp; docs are subject to change until official v1.0 release.
             <a href="#" class="alert__close" data-alert-close>×</a>
           </div>
-          <h2 class="type--header type--thin">Our Vision</h2>
+          <h2 id="vision" class="type--header type--thin">Our Vision</h2>
           <p>Metaphor is a user interface kit (UI Kit) that ensures web applications maintain consistency with CSUN branding and identity standards. Metaphor was built specifically to improve the mobile user experience and assure compliance with ADA guidelines on all platforms. It will also extend the current utility of the Web-One guidelines to incorporate web-applications.</p>
           <br>
 
-          <h2 class="type--header type--thin">Getting Started</h2>
-          <p>To include Metaphor in your next project simply run: <code>$ bower install metaphor --save</code></p>
+          <h2 id="getting-started" class="type--header type--thin">Getting Started</h2>
+          <p>To include Metaphor in your next project simply run: <code>bower install metaphor --save</code></p>
           <br>
 
-          <h2 class="type--header type--thin">Open Source</h2>
+          <h2 id="open-source" class="type--header type--thin">Open Source</h2>
           <p>Metaphor gives you a comprehensive collection of HTML, CSS, and JS components which are simple to use, easy to customize and extendable.</p>
           <p>For developers, Metaphor provides the flexibility to code in any programming language of choice and streamlines the process by providing reusable UI components. This allows developers to focus on functionality while ensuring their application adheres to compliance and branding guidelines.</p>
           <p>Metaphor is a completely open source to encourage campus collaboration. Metaphor uses the MIT License. Interested in contributing or learning more? <a href="https://github.com/csun-metalab/metaphor.git">Check out Metaphor on <i class="fa fa-github" aria-hidden="true"></i> Github.</a></p>
@@ -99,7 +99,7 @@
             }
           </style>
 
-          <h2 class="type--header type--thin">Grid System</h2>
+          <h2 id="grid" class="type--header type--thin">Grid System</h2>
           <div class="grid-example cf">
             <div class="col--outline col-sm-2">1</div>
             <div class="col--outline col-sm-10">2</div>
@@ -127,7 +127,7 @@
   &lt;div class=&quot;col-md-6&quot;&gt;.col-md-6&lt;/div&gt;
 &lt;/div&gt;</code></pre><br>
 
-          <h2 class="type--header type--thin">Typography</h2>
+          <h2 id="type" class="type--header type--thin">Typography</h2>
           <h1>Headline Example 1</h1>
           <h2>Headline Example 2</h2>
           <h3>Headline Example 3</h3>
@@ -138,7 +138,7 @@
 &lt;h3&gt;Headline Example 3&lt;/h3&gt;
 &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit.&lt;/p&gt;</code></pre><br>
 
-          <h2 class="type--header type--thin">Nav</h2>
+          <h2 id="nav" class="type--header type--thin">Nav</h2>
           <nav class="primary-nav primary-nav--cream">
             <div class="container">
               <div class="primary-nav__mobile">
@@ -210,29 +210,242 @@
 &lt;/div&gt;
 &lt;/nav&gt;</code></pre><br>
 
-          <h2 class="type--header type--thin">Buttons</h2>
-          <div>
+          <h2 id="buttons" class="type--header type--thin">Buttons</h2>
+          <p>
             <a class="btn btn-default btn-sm">Button</a>
             <a class="btn btn-default">Button</a>
             <a class="btn btn-default btn-lg">Button</a>
+          </p>
+          <p>
+            <a class="btn btn-success btn-sm">Button</a>
             <a class="btn btn-success">Button</a>
+            <a class="btn btn-success btn-lg">Button</a>
+            <a class="btn btn-success-outline btn-sm">Button</a>
+            <a class="btn btn-success-outline">Button</a>
+            <a class="btn btn-success-outline btn-lg">Button</a>
+          </p>
+          <p>
+            <a class="btn btn-primary btn-sm">Button</a>
             <a class="btn btn-primary">Button</a>
-          </div>
-          <br>
+            <a class="btn btn-primary btn-lg">Button</a>
+            <a class="btn btn-primary-outline btn-sm">Button</a>
+            <a class="btn btn-primary-outline">Button</a>
+            <a class="btn btn-primary-outline btn-lg">Button</a>
+          </p>
           <pre><code>&lt;a class=&quot;btn btn-default btn-sm&quot;&gt;Button&lt;/a&gt;
 &lt;a class=&quot;btn btn-default&quot;&gt;Button&lt;/a&gt;
 &lt;a class=&quot;btn btn-default btn-lg&quot;&gt;Button&lt;/a&gt;
 &lt;a class=&quot;btn btn-primary&quot;&gt;Button&lt;/a&gt;
 &lt;a class=&quot;btn btn-success&quot;&gt;Button&lt;/a&gt;</code></pre><br>
 
-          <p>... More Docs Coming Soon ;D</p>
+          <h2 id="panels" class="type--header type--thin">Panels</h2>
+          <div class="panel">
+            <div class="panel__content">This is a basic panel</div>
+          </div>
+          <div class="panel">
+            <div class="panel__content">This is a basic panel w/ a footer</div>
+            <div class="panel__footer"><strong>Pro Tip!</strong> Smiling Makes Others Smile :)</div>
+          </div>
+          <div class="panel">
+            <div class="panel__header">
+              <strong>Panel</strong>
+            </div>
+            <div class="panel__content">This is a basic panel w/ a header</div>
+          </div>
+          <div class="panel panel--red">
+            <div class="panel__header">
+              <strong>Panel Alert</strong>
+            </div>
+            <div class="panel__content">This is a basic panel w/ a color modifier (options: red, cream, dark-gray)</div>
+            <div class="panel__footer"><strong>Warning:</strong> Are You Sure You Want To Do That?</div>
+          </div>
+          <br>
+          <pre><code>&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__content&quot;&gt;This is a basic panel&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__content&quot;&gt;This is a basic panel w/ a footer&lt;/div&gt;
+  &lt;div class=&quot;panel__footer&quot;&gt;&lt;strong&gt;Pro Tip!&lt;/strong&gt; Smiling Makes Others Smile :)&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;strong&gt;Panel&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__content&quot;&gt;This is a basic panel w/ a header&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;panel panel--red&quot;&gt;
+  &lt;div class=&quot;panel__header&quot;&gt;
+    &lt;strong&gt;Panel Alert&lt;/strong&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;panel__content&quot;&gt;This is a basic panel w/ a color modifier&lt;/div&gt;
+  &lt;div class=&quot;panel__footer&quot;&gt;&lt;strong&gt;Warning:&lt;/strong&gt; Are You Sure You Want To Do That?&lt;/div&gt;
+&lt;/div&gt;</code></pre><br>
+
+          <h2 id="alerts" class="type--header type--thin">Alerts</h2>
+          <div class="alert alert--default"><strong>Pro Tip:</strong> Try Hitting Refresh!
+            <a href="#" class="alert__close" data-alert-close>&times;</a>
+          </div>
+          <div class="alert alert--info"><strong>Pro Tip:</strong> Try Hitting Refresh!
+            <a href="#" class="alert__close" data-alert-close>&times;</a>
+          </div>
+          <div class="alert alert--success"><strong>Success!</strong> Data Saved.
+            <a href="#" class="alert__close" data-alert-close>&times;</a>
+          </div>
+          <div class="alert alert--warning"><strong>Warning!</strong> Data Storage Limited.
+            <a href="#" class="alert__close" data-alert-close>&times;</a>
+          </div>
+          <div class="alert alert--danger"><strong>Danger!</strong> Something went horribly wrong. Application will self destruct in 1min...
+            <a href="#" class="alert__close" data-alert-close>&times;</a>
+          </div>
+          <br>
+          <pre><code>&lt;div class=&quot;alert alert--default&quot;&gt;
+  &lt;strong&gt;Pro Tip:&lt;/strong&gt; Try Hitting Refresh!
+  &lt;a href=&quot;#&quot; class=&quot;alert__close&quot; data-alert-close&gt;&times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert--info&quot;&gt;
+  &lt;strong&gt;Pro Tip:&lt;/strong&gt; Try Hitting Refresh!
+  &lt;a href=&quot;#&quot; class=&quot;alert__close&quot; data-alert-close&gt;&times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert--success&quot;&gt;
+  &lt;strong&gt;Success!&lt;/strong&gt; Data Saved.
+  &lt;a href=&quot;#&quot; class=&quot;alert__close&quot; data-alert-close&gt;&times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert--warning&quot;&gt;
+  &lt;strong&gt;Warning!&lt;/strong&gt; Data Storage Limited.
+  &lt;a href=&quot;#&quot; class=&quot;alert__close&quot; data-alert-close&gt;&times;&lt;/a&gt;
+&lt;/div&gt;
+&lt;div class=&quot;alert alert--danger&quot;&gt;
+  &lt;strong&gt;Danger!&lt;/strong&gt; Something went horribly wrong. Application will self destruct in 1min...
+  &lt;a href=&quot;#&quot; class=&quot;alert__close&quot; data-alert-close&gt;&times;&lt;/a&gt;
+&lt;/div&gt;</code></pre><br>
+
+          <h2 id="lists" class="type--header type--thin">Lists</h2>
+          <div class="row">
+            <div class="col-sm-4">
+              <ul class="list">
+                <li class="list__item"><a href="#">Side Nav Link</a></li>
+                <li class="list__item"><a href="#">Side Nav Link</a></li>
+                <li class="list__item"><a href="#">Side Nav Link</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <ul class="list list--arrows list--hover">
+                <li class="list__item"><a href="#">Side Nav Link</a></li>
+                <li class="list__item"><a href="#">Side Nav Link</a></li>
+                <li class="list__item"><a href="#">Side Nav Link</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <ul class="list">
+                <li><a href="#">Nav Link List</a></li>
+                <li><a href="#">Nav Link List</a></li>
+                <li><a href="#">Nav Link List</a></li>
+              </ul>
+            </div>
+          </div>
+          <br>
+          <pre><code>&lt;ul class=&quot;list list--arrows list--hover&quot;&gt;
+  &lt;li class=&quot;list__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Side Nav Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;list__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Side Nav Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class=&quot;list__item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Side Nav Link&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</code></pre><br>
+
+          <h2 id="tables" class="type--header type--thin">Tables</h2>
+          <table class="table table--striped table--bordered table--padded table--hover">
+            <thead>
+              <tr>
+                <th>Deal One</th>
+                <th>Deal Two</th>
+                <th>Deal Three</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hotness</td>
+                <td>Un-Hotness</td>
+                <td>Re-Hotness</td>
+              </tr>
+              <tr>
+                <td>Revenge of the Hotness</td>
+                <td>Revenge of the Un-Hotness</td>
+                <td>Revenge of the Re-Hotness</td>
+              </tr>
+              <tr>
+                <td>The Hotness Strikes Back</td>
+                <td>The Un-Hotness Strikes Back</td>
+                <td>The Re-Hotness Strikes Back</td>
+              </tr>
+            </tbody>
+          </table>
+          <br>
+          <pre><code>&lt;table class=&quot;table table--striped table--bordered table--padded table--hover&quot;&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Deal One&lt;/th&gt;
+    &lt;th&gt;Deal Two&lt;/th&gt;
+    &lt;th&gt;Deal Three&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Col 1&lt;/td&gt;
+    &lt;td&gt;Col 2&lt;/td&gt;
+    &lt;td&gt;Col 3&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;</code></pre><br>
+
+          <h2 id="" class="type--header type--thin">Name</h2>
+          <form action="">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form__group">
+                  <label class="label--required" for="example0">Date</label>
+                  <input id="example0" class="datepicker" type="text" placeholder="03/23/90">
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form__group">
+                  <label class="label--required" for="example1">Type</label>
+                  <select name="" id="">
+                    <option value="">-- Select Type --</option>
+                    <option value="">Jedi</option>
+                    <option value="">Wookie</option>
+                    <option value="">Sith</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form__group">
+                  <label class="label--required" for="example1">Email</label>
+                  <input id="example1" type="email" placeholder="Email">
+                </div>
+              </div>
+            <div class="col-sm-6">
+              <div class="form__group">
+                <label class="label--required" for="example2">Password</label>
+                <input id="example2" type="password" placeholder="Password">
+              </div>
+            </div>
+          </div>
+            <div class="form__group">
+              <label class="label--required" for="example3">Comments</label>
+              <textarea id="example3" placeholder="Comments..." rows="4"></textarea>
+            </div>
+          </form>
+          <br>
+          <pre><code>Code Here</code></pre><br>
 
           <!--
-          <h2 class="type--header type--thin">Typography</h2>
-          Code Here
+          <h2 id="" class="type--header type--thin">Name</h2>
+          Component Here
           <br>
-          <pre><code></code></pre><br>
+          <pre><code>Code Here</code></pre><br>
           -->
+          <p>... More Docs Coming Soon ;D</p>
 
 
 
