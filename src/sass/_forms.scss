@@ -45,10 +45,6 @@ input[type="password"] {
   height: 40px;
 }
 
-textarea {
-  resize: vertical;
-}
+textarea { resize: vertical; }
 
-.form__group {
-  margin-bottom: modular-scale(-1);
-}
+.form__group { margin-bottom: modular-scale(-1); }

@@ -61,6 +61,4 @@
   letter-spacing: 1px;
 }
 
-.cf {
-  @include clearfix();
-}
+.cf { @include clearfix(); }

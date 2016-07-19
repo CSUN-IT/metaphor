@@ -15,6 +15,7 @@ elixir((mix) => {
   mix.scripts([
     'vendor/jquery.js',
     'vendor/datepicker.js',
+    'components/accordion.js',
     'scripts.js'
   ],'dist/js/metaphor.js');
 

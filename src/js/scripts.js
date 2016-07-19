@@ -55,8 +55,8 @@
   var closeLinks = $('a[data-alert-close]');
   closeLinks.on('click', closeHandleMethod);
 
-
   function closeHandleMethod(e) {
+    e.preventDefault();
     $(this).parent().hide();
   }
 })(jQuery);

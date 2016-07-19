@@ -29,8 +29,9 @@
           <a class="sr-only" href="#main">Skip to main content</a>
         </div>
         <ul class="primary-nav__links">
-          <li><a href="http://csun-metalab.github.io/metaphor/docs/intro" class="primary-nav__link active">Documentation</a></li>
-          <li><a href="#" class="primary-nav__link">Powered-by Metaphor</a></li>
+          <li><a href="http://csun-metalab.github.io/metaphor" class="primary-nav__link">Home</a></li>
+          <li><a href="http://csun-metalab.github.io/metaphor/docs/documentation" class="primary-nav__link active">Documentation</a></li>
+          <li><a href="http://csun-metalab.github.io/metaphor/docs/powered-by-metaphor" class="primary-nav__link">Powered-by Metaphor</a></li>
           <li><a href="https://github.com/csun-metalab/metaphor.git" target="_blank" class="primary-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
         </ul>
       </div>
@@ -54,6 +55,7 @@
             <li class="list__item"><a href="#vision">Vision</a></li>
             <li class="list__item"><a href="#getting-started">Getting Started</a></li>
             <li class="list__item"><a href="#open-source">Open Source</a></li>
+            <li class="list__item"><a href="#accessibility">Accessibility</a></li>
           </ul>
           <br>
           <p><strong>Components:</strong></p>
@@ -68,6 +70,7 @@
             <li class="list__item"><a href="#tables">Tables</a></li>
             <li class="list__item"><a href="#forms">Forms</a></li>
             <li class="list__item"><a href="#modals">Modals</a></li>
+            <li class="list__item"><a href="#accordion">Accordion</a></li>
           </ul>
         </div>
         <div class="col-sm-9">
@@ -76,6 +79,7 @@
           </div>
           <h2 id="vision" class="type--header type--thin">Our Vision</h2>
           <p>Metaphor is a user interface kit (UI Kit) that ensures web applications maintain consistency with CSUN branding and identity standards. Metaphor was built specifically to improve the mobile user experience and assure compliance with ADA guidelines on all platforms. It will also extend the current utility of the Web-One guidelines to incorporate web-applications.</p>
+          <p>Take a look at our <a href="#">Metaphor Roadmap</a> for upcoming components.</p>
           <br>
 
           <h2 id="getting-started" class="type--header type--thin">Getting Started</h2>
@@ -86,6 +90,15 @@
           <p>Metaphor gives you a comprehensive collection of HTML, CSS, and JS components which are simple to use, easy to customize and extendable.</p>
           <p>For developers, Metaphor provides the flexibility to code in any programming language of choice and streamlines the process by providing reusable UI components. This allows developers to focus on functionality while ensuring their application adheres to compliance and branding guidelines.</p>
           <p>Metaphor is a completely open source to encourage campus collaboration. Metaphor uses the MIT License. Interested in contributing or learning more? <a href="https://github.com/csun-metalab/metaphor.git">Check out Metaphor on <i class="fa fa-github" aria-hidden="true"></i> Github.</a></p>
+          <br>
+
+          <h2 id="accessibility" class="type--header type--thin">Accessibility</h2>
+          <p>Accessibility is extremely important when building applications for the CSUN community. The <a target="_blank" href="http://a11yproject.com/">A11Y Project</a> is a great community-driven resource to make web accessibility easier. The following are some great resources to checkout:</p>
+          <ul>
+            <li><a target="_blank" href="http://a11yproject.com/checklist.html">Web Accessibility Checklist</a></li>
+            <li><a target="_blank" href="http://a11yproject.com/posts/skip-nav-links">Learn How to Use Skip Navigation</a></li>
+            <li><a target="_blank" href="http://a11yproject.com/posts/getting-started-aria">Learn How to Use ARIA Labels</a></li>
+          </ul>
           <br>
 
           <style>
@@ -398,18 +411,18 @@
 &lt;/tbody&gt;
 &lt;/table&gt;</code></pre><br>
 
-          <h2 id="" class="type--header type--thin">Name</h2>
+          <h2 id="forms" class="type--header type--thin">Forms</h2>
           <form action="">
             <div class="row">
               <div class="col-sm-6">
                 <div class="form__group">
-                  <label class="label--required" for="example0">Date</label>
+                  <label for="example0">Date</label>
                   <input id="example0" class="datepicker" type="text" placeholder="03/23/90">
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form__group">
-                  <label class="label--required" for="example1">Type</label>
+                  <label for="example1">Type</label>
                   <select name="" id="">
                     <option value="">-- Select Type --</option>
                     <option value="">Jedi</option>
@@ -432,12 +445,139 @@
             </div>
           </div>
             <div class="form__group">
-              <label class="label--required" for="example3">Comments</label>
+              <label for="example3">Comments</label>
               <textarea id="example3" placeholder="Comments..." rows="4"></textarea>
             </div>
           </form>
           <br>
-          <pre><code>Code Here</code></pre><br>
+          <pre><code>&lt;form&gt;
+  &lt;div class=&quot;form__group&quot;&gt;
+    &lt;label class=&quot;label--required&quot; for=&quot;example0&quot;&gt;Full Name&lt;/label&gt;
+    &lt;input id=&quot;example1&quot; name=&quot;example0&quot; type=&quot;text&quot; placeholder=&quot;Full Name&quot;&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form__group&quot;&gt;
+    &lt;label class=&quot;label--required&quot; for=&quot;example1&quot;&gt;Type&lt;/label&gt;
+    &lt;select name=&quot;example1&quot; id=&quot;example1&quot;&gt;
+      &lt;option value=&quot;&quot;&gt;-- Select Type --&lt;/option&gt;
+      &lt;option value=&quot;&quot;&gt;Jedi&lt;/option&gt;
+      &lt;option value=&quot;&quot;&gt;Wookie&lt;/option&gt;
+      &lt;option value=&quot;&quot;&gt;Sith&lt;/option&gt;
+    &lt;/select&gt;
+  &lt;/div&gt;
+  &lt;div class=&quot;form__group&quot;&gt;
+    &lt;label class=&quot;label--required&quot; for=&quot;example2&quot;&gt;Comments&lt;/label&gt;
+    &lt;textarea id=&quot;example2&quot; name=&quot;example2&quot; placeholder=&quot;Comments...&quot; rows=&quot;4&quot;&gt;&lt;/textarea&gt;
+  &lt;/div&gt;
+&lt;/form&gt;</code></pre><br>
+
+          <h2 id="modals" class="type--header type--thin">Modals</h2>
+          <p>Working with modals is super simple. Create your modal markup and then trigger the event with a button.</p>
+          <p>
+            <button class="btn btn-primary" data-modal="#test">Modal Powers Activate!!!</button>
+            <button class="btn btn-default" data-modal="#test1">And Another One</button>
+          </p>
+
+          <!-- Modal Example 1 -->
+          <div id="test" class="modal__outer">
+            <div class="modal">
+              <div class="modal__header">
+                <strong>Modal Title</strong>
+              </div>
+              <div class="modal__content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore, aliquam nesciunt praesentium nemo amet laudantium voluptatem, libero consectetur doloribus blanditiis sint asperiores provident sequi minus atque, vitae minima tenetur!</div>
+              <div class="modal__footer">
+                <div class="pull-right">
+                  <button class="btn btn-default" data-modal-close="#test">Cancel</button>
+                  <button class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+              <div class="modal__close" data-modal-close="#test"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+          </div>
+
+          <!-- Modal Example 2 -->
+          <div id="test1" class="modal__outer">
+            <div class="modal modal--sm">
+              <div class="modal__header">
+                <h3>Login</h3>
+              </div>
+              <div class="modal__content">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="form__group">
+                      <label class="label--required" for="example1">Email</label>
+                      <input id="example1" type="text" placeholder="Email">
+                    </div>
+                  </div>
+                  <div class="col-sm-12">
+                    <div class="form__group">
+                      <label class="label--required" for="example2">Password</label>
+                      <input id="example2" type="password" placeholder="Password">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__footer">
+                <div class="pull-right">
+                  <button class="btn btn-default" data-modal-close="#test1">Cancel</button>
+                  <button class="btn btn-primary">Sign in</button>
+                </div>
+              </div>
+              <div class="modal__close" data-modal-close="#test1"><i class="fa fa-times" aria-hidden="true"></i></div>
+            </div>
+          </div>
+
+          <pre><code>&lt;button class=&quot;btn btn-default&quot; data-modal=&quot;#test&quot;&gt;Modal Powers Activate!!!&lt;/button&gt;
+
+&lt;div id=&quot;test&quot; class=&quot;modal__outer&quot;&gt;
+  &lt;div class=&quot;modal&quot;&gt;
+    &lt;div class=&quot;modal__header&quot;&gt;
+      &lt;strong&gt;Modal Title&lt;/strong&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal__content&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias dolore, aliquam nesciunt praesentium nemo amet laudantium voluptatem, libero consectetur doloribus blanditiis sint asperiores provident sequi minus atque, vitae minima tenetur!&lt;/div&gt;
+    &lt;div class=&quot;modal__footer&quot;&gt;
+      &lt;div class=&quot;pull-right&quot;&gt;
+        &lt;button class=&quot;btn btn-default&quot; data-modal-close=&quot;#test&quot;&gt;Cancel&lt;/button&gt;
+        &lt;button class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;modal__close&quot; data-modal-close=&quot;#test&quot;&gt;&lt;i class=&quot;fa fa-times&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre><br>
+
+          <h2 id="accordion" class="type--header type--thin">Accordion</h2>
+          <dl class="accordion">
+            <dt class="accordion__header"> Topic #1 </dt>
+            <dd class="accordion__content">
+              <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab eveniet cumque. Laborum, eveniet autem quae hic vitae corporis voluptates odio at culpa repellendus minus! Vitae architecto optio quae. Ad?</p>
+              </div>
+            </dd>
+            <dt class="accordion__header"> Topic #2 </dt>
+            <dd class="accordion__content">
+              <p>Lorsdsdsdem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab eveniet cumque. Laborum, eveniet autem quae hic vitae corporis voluptates odio at culpa repellendus minus! Vitae architecto optio quae. Ad?</p>
+              <p>Lorsdsdsdem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab eveniet cumque. Laborum, eveniet autem quae hic vitae corporis voluptates odio at culpa repellendus minus! Vitae architecto optio quae. Ad?</p>
+              <p>Lorsdsdsdem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab eveniet cumque. Laborum, eveniet autem quae hic vitae corporis voluptates odio at culpa repellendus minus! Vitae architecto optio quae. Ad?</p>
+            </dd>
+            <dt class="accordion__header"> Topic #3 </dt>
+            <dd class="accordion__content">
+              <p>Lorsdsdsdem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab eveniet cumque. Laborum, eveniet autem quae hic vitae corporis voluptates odio at culpa repellendus minus! Vitae architecto optio quae. Ad?</p>
+            </dd>
+          </dl>
+          <br>
+          <pre><code>&lt;dl class=&quot;accordion&quot;&gt;
+  &lt;dt class=&quot;accordion__header&quot;&gt; Topic #1 &lt;/dt&gt;
+  &lt;dd class=&quot;accordion__content&quot;&gt;
+    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab eveniet cumque. Laborum, eveniet autem quae hic vitae corporis voluptates odio at culpa repellendus minus! Vitae architecto optio quae. Ad?&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt class=&quot;accordion__header&quot;&gt; Topic #2 &lt;/dt&gt;
+  &lt;dd class=&quot;accordion__content&quot;&gt;
+    &lt;p&gt;Lorsdsdsdem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab eveniet cumque. Laborum, eveniet autem quae hic vitae corporis voluptates odio at culpa repellendus minus! Vitae architecto optio quae. Ad?&lt;/p&gt;
+  &lt;/dd&gt;
+  &lt;dt class=&quot;accordion__header&quot;&gt; Topic #3 &lt;/dt&gt;
+  &lt;dd class=&quot;accordion__content&quot;&gt;
+    &lt;p&gt;Lorsdsdsdem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci ab eveniet cumque. Laborum, eveniet autem quae hic vitae corporis voluptates odio at culpa repellendus minus! Vitae architecto optio quae. Ad?&lt;/p&gt;
+  &lt;/dd&gt;
+&lt;/dl&gt;</code></pre><br>
 
           <!--
           <h2 id="" class="type--header type--thin">Name</h2>
@@ -445,7 +585,7 @@
           <br>
           <pre><code>Code Here</code></pre><br>
           -->
-          <p>... More Docs Coming Soon ;D</p>
+          <p>... More Components &amp; Docs Coming Soon ;D</p>
 
 
 

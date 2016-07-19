@@ -33,9 +33,7 @@ $panel-colors: (
   }
 }
 
-.panel__content {
-  padding: modular-scale(0);
-}
+.panel__content { padding: modular-scale(0); }
 
 .panel__footer {
   @extend .milli;

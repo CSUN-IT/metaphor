@@ -10,8 +10,12 @@
 .section {
   padding: 30px 0;
 
-  &--lg {
+  &--md {
     padding: 75px 0;
+  }
+
+  &--lg {
+    padding: 100px 0;
   }
 
   &--bottomless {

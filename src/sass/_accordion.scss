@@ -1,0 +1,28 @@
+// ACCORDION
+//
+
+.accordion__header {
+  padding: modular-scale(-3) modular-scale(0);
+  margin-bottom: -1px;
+  cursor: pointer;
+  background-color: #efefef;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+.accordion__content {
+  @include clearfix();
+  display: none;
+  padding: modular-scale(0);
+  margin: 0 0 -1px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+
+  &--show {
+    display: block;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
