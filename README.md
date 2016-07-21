@@ -12,11 +12,29 @@ Install Metaphor with [Bower](http://bower.io) package manager into your project
   $ bower install metaphor --save
   ```
 
-In your project add the following paths:
+In your project add the following and update the paths to Metaphor:
 
   ```html
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metaphor by META+LAB</title>
+  <meta name="description" content="">
+
+  <script src="//use.typekit.net/gfb2mjm.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+
   <link rel="stylesheet" href="../project/path/to/metaphor.css">
+</head>
+<body>
+  <!-- Add Code & Start Building :D -->
+
   <script src="../project/path/to/metaphor.js"></script>
+</body>
+</html>
   ```
 ## Bugs and Feature Requests
 
