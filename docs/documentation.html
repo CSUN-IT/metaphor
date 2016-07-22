@@ -445,51 +445,69 @@
               <div class="col-sm-6">
                 <div class="form__group">
                   <label for="example1">Type</label>
-                  <select name="" id="">
+                  <select name="" id="example1">
                     <option value="">-- Select Type --</option>
-                    <option value="">Jedi</option>
-                    <option value="">Wookie</option>
-                    <option value="">Sith</option>
+                    <option value="1">Jedi</option>
+                    <option value="2">Wookie</option>
+                    <option value="3">Sith</option>
                   </select>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="form__group">
-                  <label class="label--required" for="example1">Email</label>
-                  <input id="example1" type="email" placeholder="Email">
+                  <label class="label--required" for="example2">Email</label>
+                  <input id="example2" type="email" placeholder="Email">
                 </div>
               </div>
             <div class="col-sm-6">
               <div class="form__group">
-                <label class="label--required" for="example2">Password</label>
-                <input id="example2" type="password" placeholder="Password">
+                <label class="label--required" for="example3">Password</label>
+                <input id="example3" type="password" placeholder="Password">
               </div>
             </div>
           </div>
             <div class="form__group">
-              <label for="example3">Comments</label>
-              <textarea id="example3" placeholder="Comments..." rows="4"></textarea>
+              <label for="example4">Comments</label>
+              <textarea id="example4" placeholder="Comments..." rows="4"></textarea>
             </div>
           </form>
           <br>
-          <pre><code>&lt;form&gt;
-  &lt;div class=&quot;form__group&quot;&gt;
-    &lt;label class=&quot;label--required&quot; for=&quot;example0&quot;&gt;Full Name&lt;/label&gt;
-    &lt;input id=&quot;example1&quot; name=&quot;example0&quot; type=&quot;text&quot; placeholder=&quot;Full Name&quot;&gt;
+          <pre><code>&lt;form action=&quot;&quot;&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-sm-6&quot;&gt;
+    &lt;div class=&quot;form__group&quot;&gt;
+      &lt;label for=&quot;example0&quot;&gt;Date&lt;/label&gt;
+      &lt;input id=&quot;example0&quot; class=&quot;datepicker&quot; type=&quot;text&quot; placeholder=&quot;03/23/90&quot;&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;form__group&quot;&gt;
-    &lt;label class=&quot;label--required&quot; for=&quot;example1&quot;&gt;Type&lt;/label&gt;
-    &lt;select name=&quot;example1&quot; id=&quot;example1&quot;&gt;
-      &lt;option value=&quot;&quot;&gt;-- Select Type --&lt;/option&gt;
-      &lt;option value=&quot;&quot;&gt;Jedi&lt;/option&gt;
-      &lt;option value=&quot;&quot;&gt;Wookie&lt;/option&gt;
-      &lt;option value=&quot;&quot;&gt;Sith&lt;/option&gt;
-    &lt;/select&gt;
+  &lt;div class=&quot;col-sm-6&quot;&gt;
+    &lt;div class=&quot;form__group&quot;&gt;
+      &lt;label for=&quot;example1&quot;&gt;Type&lt;/label&gt;
+      &lt;select name=&quot;&quot; id=&quot;example1&quot;&gt;
+        &lt;option value=&quot;&quot;&gt;-- Select Type --&lt;/option&gt;
+        &lt;option value=&quot;1&quot;&gt;Jedi&lt;/option&gt;
+        &lt;option value=&quot;2&quot;&gt;Wookie&lt;/option&gt;
+        &lt;option value=&quot;3&quot;&gt;Sith&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
-  &lt;div class=&quot;form__group&quot;&gt;
-    &lt;label class=&quot;label--required&quot; for=&quot;example2&quot;&gt;Comments&lt;/label&gt;
-    &lt;textarea id=&quot;example2&quot; name=&quot;example2&quot; placeholder=&quot;Comments...&quot; rows=&quot;4&quot;&gt;&lt;/textarea&gt;
+  &lt;div class=&quot;col-sm-6&quot;&gt;
+    &lt;div class=&quot;form__group&quot;&gt;
+      &lt;label class=&quot;label--required&quot; for=&quot;example2&quot;&gt;Email&lt;/label&gt;
+      &lt;input id=&quot;example2&quot; type=&quot;email&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
   &lt;/div&gt;
+&lt;div class=&quot;col-sm-6&quot;&gt;
+  &lt;div class=&quot;form__group&quot;&gt;
+    &lt;label class=&quot;label--required&quot; for=&quot;example3&quot;&gt;Password&lt;/label&gt;
+    &lt;input id=&quot;example3&quot; type=&quot;password&quot; placeholder=&quot;Password&quot;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;form__group&quot;&gt;
+  &lt;label for=&quot;example4&quot;&gt;Comments&lt;/label&gt;
+  &lt;textarea id=&quot;example4&quot; placeholder=&quot;Comments...&quot; rows=&quot;4&quot;&gt;&lt;/textarea&gt;
+&lt;/div&gt;
 &lt;/form&gt;</code></pre><br>
 
           <h2 id="modals" class="type--header type--thin">Modals</h2>
@@ -526,14 +544,14 @@
                 <div class="row">
                   <div class="col-sm-12">
                     <div class="form__group">
-                      <label class="label--required" for="example1">Email</label>
-                      <input id="example1" type="text" placeholder="Email">
+                      <label class="label--required" for="example5">Email</label>
+                      <input id="example5" type="text" placeholder="Email">
                     </div>
                   </div>
                   <div class="col-sm-12">
                     <div class="form__group">
-                      <label class="label--required" for="example2">Password</label>
-                      <input id="example2" type="password" placeholder="Password">
+                      <label class="label--required" for="example6">Password</label>
+                      <input id="example6" type="password" placeholder="Password">
                     </div>
                   </div>
                 </div>

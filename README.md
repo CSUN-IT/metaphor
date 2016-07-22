@@ -14,7 +14,7 @@ Install Metaphor with [Bower](http://bower.io) package manager into your project
 
 In your project add the following and update the paths to Metaphor:
 
-  ```html
+```html
 <!DOCTYPE HTML>
 <html class="no-js" lang="en">
 <head>
@@ -35,7 +35,7 @@ In your project add the following and update the paths to Metaphor:
   <script src="../project/path/to/metaphor.js"></script>
 </body>
 </html>
-  ```
+```
 ## Bugs and Feature Requests
 
 Have a bug or a feature request? Please first read the [issue guidelines](https://github.com/alexhernandez/metaphor/blob/master/CONTRIBUTING.md) and search for existing and closed issues. If your problem or idea is not addressed yet, [please open a new issue](https://github.com/alexhernandez/metaphor/issues/new).
