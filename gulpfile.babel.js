@@ -1,10 +1,12 @@
 'use strict';
 
-const elixir = require('laravel-elixir');
-let bowerPath = 'bower_components';
+import elixir from 'laravel-elixir';
 
+// Elixir Configurations
 elixir.config.assetsPath = 'src';
 elixir.config.publicPath = 'dist';
+
+let bowerPath = './bower_components';
 
 elixir((mix) => {
   mix.copy(`${bowerPath}/jquery/dist/jquery.min.js`, 'src/js/vendor/jquery.js');
@@ -20,4 +22,5 @@ elixir((mix) => {
   ],'dist/js/metaphor.js');
 
   mix.sass('metaphor.scss');
+  mix.sass('themes/lightning-panel/lightning-panel.scss');
 });
