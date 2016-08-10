@@ -179,6 +179,34 @@ td,
 th {
   padding: 0; }
 
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  position: relative;
+  z-index: 1;
+  background-color: #fff; }
+
+h1, h2, h3, h4, h5, h6,
+p, ul, ol, dl, dd, figure,
+blockquote, details, hr,
+fieldset, pre, table {
+  margin-top: 0; }
+
+img {
+  vertical-align: middle; }
+
+table {
+  background-color: #fff; }
+
+th {
+  text-align: left; }
+
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2367,34 +2395,6 @@ th {
   clip: auto; }
 
 html {
-  box-sizing: border-box; }
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit; }
-
-body {
-  position: relative;
-  z-index: 1;
-  background-color: #fff; }
-
-h1, h2, h3, h4, h5, h6,
-p, ul, ol, dl, dd, figure,
-blockquote, details, hr,
-fieldset, pre, table {
-  margin-top: 0; }
-
-img {
-  vertical-align: middle; }
-
-table {
-  background-color: #fff; }
-
-th {
-  text-align: left; }
-
-html {
   font-size: 15px; }
 
 body {
@@ -3466,12 +3466,12 @@ pre {
 
 .btn {
   display: inline-block;
-  padding: 6px 20px;
+  padding: 7px 20px;
   margin-bottom: 0;
   font-family: "museo-sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   font-weight: 500;
-  line-height: 1.8;
+  line-height: inherit;
   text-align: center;
   text-decoration: none;
   text-shadow: none;
@@ -4326,6 +4326,14 @@ label {
   color: #d00d2d;
   content: "*"; }
 
+select {
+  background-image: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+
 select,
 textarea,
 input[type="text"],
@@ -4873,6 +4881,26 @@ h1, h2, h3, h4, h5, h6 {
 
 .cf::after {
   clear: both; }
+
+.form--block {
+  display: -webkit-box;
+  display: flex; }
+  .form--block input,
+  .form--block select {
+    border-right-width: 0;
+    border-radius: 0; }
+  .form--block input:first-child {
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
+  .form--block input:last-child {
+    border-right-width: 1px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
+    .form--block input:last-child.btn {
+      padding-right: 30px;
+      padding-left: 30px;
+      border-right-width: 2px;
+      flex-shrink: 0; }
 
 .metalab-wrapper {
   position: absolute;

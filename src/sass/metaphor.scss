@@ -10,17 +10,15 @@
 
 // RESETS
 @import "normalize";
+@import "base";
 
 // Dependencies
 @import "vendor/font-awesome/font-awesome";
 
-// CORE
-@import "base";
+// COMPONENTS
 @import "type";
 @import "code";
 @import "grid";
-
-// COMPONENTS
 @import "navigation";
 @import "buttons";
 @import "forms";
@@ -34,6 +32,10 @@
 @import "progress";
 @import "accordion";
 @import "helpers";
+
+// LAYOUTS
+@import "layouts";
+
 
 // THEME
 @import "themes/metalab/meta-footer";

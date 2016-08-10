@@ -17,6 +17,13 @@ label {
   }
 }
 
+select {
+  background-image: url("http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  appearance: none;
+}
+
 select,
 textarea,
 input[type="text"],
