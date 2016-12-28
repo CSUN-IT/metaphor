@@ -16,7 +16,7 @@
     "laravel-elixir-webpack-official": "^1.0.8"
   },
   "scripts": {
-    "deploy": "cd docs && gulp && jigsaw build production &&  cd .. && git add docs/build_production && git commit -m 'Build for production' && git subtree push --prefix docs/build_production deploy gh-pages"
+    "deploy": "cd docs && gulp && jigsaw build production &&  cd .. && git add docs/build_production && git commit -m 'Build for production' && git subtree push --prefix docs/build_production origin gh-pages"
   }
 
 }
