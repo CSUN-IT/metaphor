@@ -28,3 +28,8 @@
 	<li class="nav__item @if( $title == "Accordion" ) nav__item--active @endif"><a class="nav__link" href="../accordion">Accordion</a></li>
 	<li class="nav__item @if( $title == "Helpers" ) nav__item--active @endif"><a class="nav__link" href="../helpers">Helpers</a></li>
 </ul>
+
+<p class="header--sm"><strong>Tools:</strong></p>
+<ul class="nav">
+	<li class="nav__item @if( $title == "Snippets" ) nav__item--active @endif"><a class="nav__link" href="../snippets">Text Editor Snippets</a></li>
+</ul>
