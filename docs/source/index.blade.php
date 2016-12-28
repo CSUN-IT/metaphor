@@ -70,7 +70,7 @@
             <p>Working with Metaphor is simple. Start by opening up your command line and running the following:</p>
             <pre><code>$ bower install metaphor --save</code></pre>
             <br>
-            <div><a class="btn btn-primary-outline" href="docs/vision.html" role="button">View Documentation</a></div>
+            <div><a class="btn btn-primary-outline" href="/{{$root_url}}/vision" role="button">View Documentation</a></div>
           </div>
         </div>
       </div>

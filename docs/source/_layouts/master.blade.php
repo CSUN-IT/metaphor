@@ -14,9 +14,9 @@
   <link rel="stylesheet" href="//cdn.metalab.csun.edu/metaphor/css/metaphor.css">
 </head>
 <body>
- @include('_partials.navbar')
+ @include('_partials.navbar',['root_url'=>$root_url])
  @yield('body')
- @include('_partials.footer')
+ @include('_partials.footer',['root_url'=>$root_url])
 </body>
 <script src="//cdn.metalab.csun.edu/metaphor/js/metaphor.js"></script>
 </body>

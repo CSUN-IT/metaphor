@@ -15,14 +15,14 @@
   <link rel="stylesheet" href="//cdn.metalab.csun.edu/metaphor/css/metaphor.css">
 </head>
 <body>
-  @include('_partials.navbar')
+  @include('_partials.navbar',['root_url'=>$root_url])
   <div class="section" style="background-color: #252525;">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
           <h1 class="type--white type--thin type--marginless">Documentation</h1>
           <ul class="breadcrumbs breadcrumbs--marginless type--white">
-            <li class="breadcrumb__item breadcrumb__item--home"><a href="../index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+            <li class="breadcrumb__item breadcrumb__item--home"><a href="/{{$root_url}}/"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
             <li class="breadcrumb__item">@yield('category')</li>
             <li class="breadcrumb__item">@yield('title')</li>
           </ul>
@@ -39,7 +39,7 @@
           </div>
         </div>
         <div class="col-sm-3">
-          @include('_partials.sidebar',['title'=> $title ])
+          @include('_partials.sidebar',['title'=> $title ,'root_url'=>$root_url])
         </div>
         <div class="col-sm-9">
           @yield('body')
@@ -47,7 +47,7 @@
       </div>
     </div>
   </div>
-  @include('_partials.footer')
+  @include('_partials.footer',['root_url'=>$root_url])
   <!-- SCRIPTS -->
   <script src="//cdn.metalab.csun.edu/metaphor/js/metaphor.js"></script>
   <script>
