@@ -2,56 +2,77 @@
 <html class="no-js" lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-  <title>Metaphor by META+Lab</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
   <meta name="description" content="An elegantly crafted UI Kit for CSUN branded prototypes &amp; applications">
+  <link rel="icon" href="//www.csun.edu/sites/default/themes/csun/favicon.ico" type="image/x-icon">
 
-  <!-- FONT LIBS -->
+  <!-- CSUN Branded Fonts -->
   <script src="//use.typekit.net/gfb2mjm.js"></script>
   <script>try{Typekit.load();}catch(e){}</script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic">
-  <link rel="stylesheet" href="dist/css/metaphor.css">
+  <link rel="stylesheet" href="//cdn.metalab.csun.edu/metaphor/css/metaphor.css">
 </head>
 <body>
-
-  <div class="header">
-    <nav class="primary-nav">
-      <div class="container">
-        <div class="primary-nav__mobile">
-          <div class="primary-nav__btn">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
-          </div>
-          <div class="primary-nav__brand"><span class="sr-only">California State University, Northridge (CSUN)</span></div>
-          <a class="sr-only" href="#main">Skip to main content</a>
+ <div class="header">
+  <nav class="primary-nav">
+    <div class="container">
+      <div class="primary-nav__mobile">
+        <div class="primary-nav__btn">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-        <ul class="primary-nav__links">
-          <li><a href="http://csun-metalab.github.io/metaphor" class="primary-nav__link active">Home</a></li>
-          <li><a href="http://csun-metalab.github.io/metaphor/docs/documentation" class="primary-nav__link">Documentation</a></li>
-          <li><a href="http://csun-metalab.github.io/metaphor/docs/powered-by-metaphor" class="primary-nav__link">Powered-by Metaphor</a></li>
-          <li><a href="https://github.com/csun-metalab/metaphor.git" target="_blank" class="primary-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
-        </ul>
+        <a href="//www.csun.edu" class="primary-nav__brand"><span class="sr-only">California State University, Northridge (CSUN)</span></a>
+        <a href="/metaphor/" class="primary-nav__sub-brand">Metaphor</a>
+        <a class="sr-only" href="#main">Skip to main content</a>
       </div>
-    </nav>
-  </div>
-
-  <div class="section section--md section--bottomless">
+      <ul class="primary-nav__links">
+        <li><a href="/metaphor/" class="primary-nav__link 
+Notice: Undefined variable: title in /Users/a13xemz/Meta+Lab/metaphor/docs/_tmp/bf70b17f73302d2fa68117e6d3922d93b8c7b230.php on line 15
+ active ">Home</a></li>
+        <li><a href="/metaphor/vision" class="primary-nav__link  
+Notice: Undefined variable: title in /Users/a13xemz/Meta+Lab/metaphor/docs/_tmp/bf70b17f73302d2fa68117e6d3922d93b8c7b230.php on line 16
+">Documentation</a></li>
+        <li><a href="/metaphor/powered-by-metaphor" class="primary-nav__link 
+Notice: Undefined variable: title in /Users/a13xemz/Meta+Lab/metaphor/docs/_tmp/bf70b17f73302d2fa68117e6d3922d93b8c7b230.php on line 17
+">Powered-by Metaphor</a></li>
+        <li><a href="//github.com/csun-metalab/metaphor.git" target="_blank" class="primary-nav__link"><i class="fa fa-github" aria-hidden="true"></i> Github</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>   <div class="section section--md section--bottomless">
     <div class="container type--center">
-      <img src="docs/imgs/icon.png" style="width:80px; margin-bottom: 25px;" alt="Metaphor Logo">
+      <img src="imgs/icon.png" style="width:80px; margin-bottom: 25px;" alt="Metaphor Logo">
       <h1 class="giga type--thin">The New Metaphor UI Kit.</h1>
-      <h2 class="h1 type--thin type--gray">Rapid App Development Is Finally Here.</h2>
+      <h2 class="h1 type--thin type--dark-gray">Rapid App Development Is Finally Here.</h2>
       <br>
       <p><a href="https://github.com/csun-metalab/metaphor.git" target="_blank" class="btn btn-primary-outline btn-lg">Download</a></p>
-      <p class="milli type--uppercase type--gray type--marginless">Santana, v0.8.0-Alpha</p>
+      <p class="milli type--uppercase type--dark-gray type--marginless" id="version"></p>   
+      <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+        crossorigin="anonymous"></script>
+      <script>
+      var $version = $('#version');
+      $.ajax({
+        method: "GET",
+        url: "https://api.github.com/repos/csun-metalab/metaphor/releases",
+        dataType: "json",
+        success: function(data){
+            $version.append(data[0].name);
+          }
+        },{
+        error: function(){
+          $version.append('Can\'t Display Active Contributors');
+        }
+      });</script>
       <br><br>
-      <img class="img--fluid" src="docs/imgs/editor.png" alt="Metaphor Text Editor">
+      <img class="img--fluid" src="imgs/editor.png" alt="Metaphor Text Editor">
     </div>
   </div>
 
-  <main id="main" class="main" role="main">
+  <main clas="main main--metalab">
     <div class="section section--md type--center" style="background-color: rgba(216, 210, 196, 0.2);">
       <div class="container">
         <div class="row">
@@ -89,22 +110,63 @@
             <p>Working with Metaphor is simple. Start by opening up your command line and running the following:</p>
             <pre><code>$ bower install metaphor --save</code></pre>
             <br>
-            <div><a class="btn btn-primary-outline" href="http://csun-metalab.github.io/metaphor/docs/documentation" role="button">View Documentation</a></div>
+            <div><a class="btn btn-primary-outline" href="/metaphor/vision" role="button">View Documentation</a></div>
           </div>
         </div>
       </div>
     </div>
   </main>
-
+ <footer>
+	  <div class="container">
+		  <div class="row">
+  			<div class="col-sm-5">
+  				<div class="row">
+  					<div class="col-sm-3 footer-seal">
+  						<img src="//www.csun.edu/sites/default/themes/csun/images/footer-seal.png" alt="Seal for California State University, Northridge">
+  					</div>
+  					<div class="col-sm-9">
+  						<ul class="list--unstyled">
+  							<li><strong>META+LAB</strong> <br>© California State University, Northridge</li>
+  							<li>18111 Nordhoff Street, Northridge, CA 91330</li>
+  							<li>Phone: (818) 677-1200 / <a href="//www.csun.edu/contact/" target="_blank">Contact Us</a></li>
+  						</ul>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-sm-7">
+  				<div class="row">
+  					<div class="col-sm-4">
+  						<ul class="list--unstyled">
+  							<li><a href="//www.csun.edu/emergency/" target="_blank">Emergency Information</a></li>
+  							<li><a href="//www.csun.edu/afvp/university-policies-procedures/" target="_blank">University Policies &amp; Procedures</a></li>
+  						</ul>
+  					</div>
+  					<div class="col-sm-4">
+  						<ul class="list--unstyled">
+  							<li><a href="//www.csun.edu/sites/default/files/900-12.pdf" target="_blank">Terms and Conditions for Use</a></li>
+  							<li><a href="//www.csun.edu/sites/default/files/500-8025.pdf" target="_blank">Privacy Policy</a></li>
+  							<li><a href="//www.csun.edu/it/document-viewers" target="_blank">Document Reader</a></li>
+  						</ul>
+  					</div>
+  					<div class="col-sm-4">
+  						<ul class="list--unstyled">
+  							<li><a href="//www.calstate.edu/" target="_blank">California State University</a></li>
+  						</ul>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  </footer>
   <div class="metalab-footer">
     <div class="metalab-wrapper">
       <div class="container">
         <div class="row">
           <div class="col-sm-6">
             <div class="metalab-branding">
-              <img src="http://www.csun.edu/faculty/imgs/meta-logo-horz.png" alt="CSUN META Lab Logo">
+              <img src="//www.csun.edu/faculty/imgs/meta-logo-horz.png" alt="CSUN META Lab Logo">
               <ul class="list--unstyled">
-                <li><a href="http://metalab.csun.edu">metalab.csun.edu</a></li>
+                <li><a href="//metalab.csun.edu">metalab.csun.edu</a></li>
               </ul>
             </div>
           </div>
@@ -116,18 +178,7 @@
         </div>
       </div>
     </div>
-  </div>
-
-  <!-- SCRIPTS -->
-  <script src="dist/js/metaphor.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-77781058-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  </div></body>
+<script src="//cdn.metalab.csun.edu/metaphor/js/metaphor.js"></script>
 </body>
 </html>
