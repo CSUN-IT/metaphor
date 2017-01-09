@@ -18,6 +18,7 @@ elixir((mix) => {
     'vendor/jquery.js',
     'vendor/datepicker.js',
     'components/accordion.js',
+    'components/alertanimations.js',
     'scripts.js',
   ],'dist/js/metaphor.js');
 
