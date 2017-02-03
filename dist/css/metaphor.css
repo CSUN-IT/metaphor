@@ -4699,7 +4699,11 @@ textarea {
   margin-bottom: 1.2rem;
   border-radius: 3px; }
 
-  .tab-container{
+ .list--padded li {
+  margin-bottom: 5px;
+}
+
+    .tab-container{
       border-bottom: 1px solid #e7e7e7;
     }
     .tabs{
@@ -4733,6 +4737,14 @@ textarea {
       color: #d00d2d;
       border-bottom: 1px solid #d00d2d;
     }
+
+  input, select, textarea {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Open sans", sans-serif;
+  }
+
+
 
 .table--bordered th, .table--bordered td {
   border: 1px solid #e7e7e7; }
