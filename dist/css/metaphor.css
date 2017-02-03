@@ -195,6 +195,7 @@ th {
   font-style: normal; }
 .fa_arrow {
 color: #D00D2D;
+margin-left:10px;
 }
 .fa {
   display: inline-block;
@@ -202,7 +203,9 @@ color: #D00D2D;
   font-size: inherit;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale; 
+
+}
 
 /* makes the font 33% larger relative to the icon container */
 .fa-lg {
@@ -4696,6 +4699,41 @@ textarea {
   margin-bottom: 1.2rem;
   border-radius: 3px; }
 
+  .tab-container{
+      border-bottom: 1px solid #e7e7e7;
+    }
+    .tabs{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      margin-bottom: -1px;
+    }
+    .tab__list{
+      display: inline-block;
+      margin-left: -4px;
+    }
+    .tab__link {
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      color: #4a4a4a;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    .tab__link:hover {
+      border-bottom: 1px solid #252525;
+    }
+
+    .tab__link--active {
+      font-weight: bold;
+      color: #d00d2d;
+      border-bottom: 1px solid #d00d2d;
+    }
+
 .table--bordered th, .table--bordered td {
   border: 1px solid #e7e7e7; }
 
@@ -5095,6 +5133,11 @@ h1, h2, h3, h4, h5, h6 {
 .invisible {
   visibility: hidden; }
 
+input, select, textarea {
+    font-size: 15px;
+    font-weight: normal;
+    font-family: "Open sans", sans-serif;
+}
 .sr-only {
   position: absolute;
   width: 1px;
@@ -5103,7 +5146,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: -1px;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0; }
+  border: 0; 
+}
 
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
