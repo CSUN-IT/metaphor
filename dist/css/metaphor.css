@@ -4703,6 +4703,13 @@ textarea {
   margin-bottom: 5px;
 }
 
+.cf::before, .cf::after {
+  display: table;
+  content: " "; }
+
+.cf::after {
+  clear: both; }
+
     .tab-container{
       border-bottom: 1px solid #e7e7e7;
     }
