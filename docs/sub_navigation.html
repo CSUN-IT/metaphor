@@ -107,11 +107,73 @@
           <h2 class="type--header type--thin">Sub Navigation</h2>
           <div class="table--responsive">
           
-      
+        <style>
+        .tab-container{
+      border-bottom: 1px solid #e7e7e7;
+    }
+    .tabs{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow-x: auto;
+      overflow-y: hidden;
+      -webkit-overflow-scrolling: touch;
+      white-space: nowrap;
+      margin-bottom: -1px;
+    }
+    .tab__list{
+      display: inline-block;
+      margin-left: -4px;
+    }
+    .tab__link {
+      text-decoration: none;
+      display: block;
+      padding: 10px 20px;
+      color: #4a4a4a;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+    }
+    .tab__link:hover {
+      border-bottom: 1px solid #252525;
+    }
+
+    .tab__link--active {
+      font-weight: bold;
+      color: #d00d2d;
+      border-bottom: 1px solid #d00d2d;
+    }
+</style>
         
           <div class="table--responsive">
             <table class="table table--striped table--bordered table--padded table--hover">
-          
+            <style>
+  .black-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: block;
+    /*z-index: 0;*/
+  }
+  .arrow {
+    width: 0;
+    height: 0;
+    border-color: #666 transparent transparent;
+    border-style: solid;
+    border-width: 6px 6px 0;
+    border-radius: 3px;
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      display: none;
+    }
+  }
+
+}
+</style>
  <div class="section" style="position: relative; background: url(//www.csun.edu/faculty/imgs/9.jpg) no-repeat center center scroll; background-size: cover;">
   <div class="container" style="position: relative; z-index: 1;">
     <div class="row">
