@@ -5,6 +5,9 @@
 
 var elixir = require('laravel-elixir');
 
+//require('laravel-elixir-webpack-official');
+require('laravel-elixir-scss-lint');
+
 let bowerPath = './bower_components';
 
 elixir.config.assetsPath = 'src';
@@ -23,7 +26,7 @@ elixir(function(mix)  {
     'scripts.js',
   ],'dist/js/metaphor.js');
 
+  //mix.scssLint();
   mix.webpack('metaphor.js');
- //mix.scssLint();
   mix.sass('metaphor.scss');
 });
