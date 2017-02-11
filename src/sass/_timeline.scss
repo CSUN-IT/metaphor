@@ -1,0 +1,39 @@
+.timeline {
+    padding: 5px 0;
+    list-style: none;
+    border-left: 1px solid #d00d2d;
+    position: relative;
+  }
+
+  .timeline__event,
+  .timeline__header,
+  .timeline__content {
+    position: relative;
+    padding-left: 15px;
+  }
+
+  .timeline__header::before {
+    content: "";
+    background-color: white;
+    height: 11px;
+    width: 11px;
+    border: 2px solid #d00d2d;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: -6px;
+    transform: translateY(-50%);
+  }
+
+  .timeline__event::before {
+    content: "";
+    background-color: #d00d2d;
+    height: 7px;
+    width: 7px;
+    border: 1px solid #d00d2d;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: -4px;
+    transform: translateY(-50%);
+  }

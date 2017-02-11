@@ -1,14 +1,19 @@
 'use strict';
 
-import elixir from 'laravel-elixir';
-import 'laravel-elixir-scss-lint';
+//import elixir from 'laravel-elixir';
+//import 'laravel-elixir-scss-lint';
+
+var elixir = require('laravel-elixir');
+
+//require('laravel-elixir-webpack-official');
+require('laravel-elixir-scss-lint');
 
 let bowerPath = './bower_components';
 
 elixir.config.assetsPath = 'src';
 elixir.config.publicPath = 'dist';
 
-elixir((mix) => {
+elixir(function(mix)  {
   mix.copy(`${bowerPath}/jquery/dist/jquery.min.js`, 'src/js/vendor/jquery.js');
   mix.copy(`${bowerPath}/jquery-ui/ui/widgets/datepicker.js`, 'src/js/vendor/datepicker.js');
   mix.copy(`${bowerPath}/font-awesome/scss`, 'src/sass/vendor/font-awesome');
@@ -21,7 +26,7 @@ elixir((mix) => {
     'scripts.js',
   ],'dist/js/metaphor.js');
 
-  // mix.webpack('metaphor.js');
-  mix.scssLint();
+  //mix.scssLint();
+  mix.webpack('metaphor.js');
   mix.sass('metaphor.scss');
 });
