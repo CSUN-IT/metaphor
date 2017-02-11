@@ -3425,7 +3425,6 @@ p, ul, ol, pre, code {
 p a {
   color: #d00d2d;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 a {
@@ -6610,48 +6609,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .accordion__content p:last-child {
   margin-bottom: 0;
-}
-
-.timeline {
-  padding: 5px 0;
-  list-style: none;
-  border-left: 1px solid #d00d2d;
-  position: relative;
-}
-
-.timeline__event,
-.timeline__header,
-.timeline__content {
-  position: relative;
-  padding-left: 15px;
-}
-
-.timeline__header::before {
-  content: "";
-  background-color: white;
-  height: 11px;
-  width: 11px;
-  border: 2px solid #d00d2d;
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  left: -6px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-.timeline__event::before {
-  content: "";
-  background-color: #d00d2d;
-  height: 7px;
-  width: 7px;
-  border: 1px solid #d00d2d;
-  position: absolute;
-  border-radius: 50%;
-  top: 50%;
-  left: -4px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 .pull-right {
