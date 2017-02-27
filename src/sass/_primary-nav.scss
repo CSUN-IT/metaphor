@@ -1,20 +1,20 @@
-// PRIMARY NAV
-//
 
 // NOTES:
 // CONSIDER NAV OPAQUE OPTIONS
 
+// PRIMARY NAV
 .primary-nav {
   @include clearfix();
   position: relative;
   z-index: 100;
-  background-color: rgba(#fff, .95);
-  border-bottom: 1px solid rgba(#4a4a4a, .1);
+  background-color: rgba($white, .95);
+  border-bottom: 1px solid rgba($grey, .1);
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     border-bottom: 0;
   }
 }
 
+// PRIMARY NAV MOBILE VIEW
 .primary-nav__mobile {
   position: relative;
   height: 45px;
@@ -26,6 +26,7 @@
   }
 }
 
+// PRIMARY NAV MOBILE VIEW SANDWHICH
 .primary-nav__btn {
   display: block;
   float: right;
@@ -49,6 +50,7 @@
   }
 }
 
+// PRIMARY NAV CSUN LOGO
 .primary-nav__brand {
   display: block;
   float: left;
@@ -64,6 +66,7 @@
   }
 }
 
+// PRIMARY NAV SUB TITLE
 .primary-nav__sub-brand {
   display: block;
   float: left;
@@ -73,14 +76,15 @@
   font-family: $font-brand;
   font-size: 20px;
   font-weight: 300;
-  color: #4a4a4a;
+  color: $grey;
   text-decoration: none;
   text-overflow: ellipsis; // Explore This Further
   white-space: nowrap; // Explore This Further
   cursor: pointer;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid $gray;
 }
 
+// PRIMARY NAV LINKS STYLE POSTIONING
 .primary-nav__links {
   @include clearfix();
   display: none;
@@ -106,13 +110,16 @@
   }
 }
 
+// PRIMARY NAV LINKS OPEN STYLE
 .primary-nav__links--open { display: block; }
 
+
+// PRIMARY NAV LINKS STYLE
 .primary-nav__link {
   display: block;
   padding: 5px 0;
   font-size: 14px;
-  color: #4a4a4a;
+  color: $grey;
   text-decoration: none;
 
   &:hover {
@@ -120,7 +127,7 @@
   }
 
   &.active {
-    color: #fff;
+    color: $white;
     background-color: $red;
     border-radius: 3px;
   }
@@ -141,23 +148,67 @@
   }
 }
 
+// PRIMARY NAV CREAM COLOR
 .primary-nav--cream {
   background-color: rgba($cream, .9);
 
   .bar {
     background-color: $red;
   }
+
+  .primary-nav__sub-brand {
+    display: block;
+    float: left;
+    padding-left: 8px;
+    margin: 7px 0 7px 8px;
+    overflow: hidden; // Explore This Further
+    font-family: $font-brand;
+    font-size: 20px;
+    font-weight: 300;
+    color: $grey;
+    text-decoration: none;
+    text-overflow: ellipsis; // Explore This Further
+    white-space: nowrap; // Explore This Further
+    cursor: pointer;
+    border-left: 1px solid $gray;
+  }
 }
 
+// PRIMARY NAV BLACK COLOR
 .primary-nav--black {
   background-color: rgba($black, .9);
 
   .bar {
-    background-color: #fff;
+    background-color: $white;
   }
 
   .primary-nav__link {
-    color: #fff;
+    color: $white;
+
+    &:hover {
+      color: $red;
+    }
+
+    &.active {
+      color: $white;
+      background-color: $red;
+      border-radius: 3px;
+    }
+
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+      padding: 10px 0;
+      margin-right: 5px;
+      margin-left: 5px;
+      border-top: 2px solid transparent;
+
+      &.active {
+        color: $red;
+        background-color: transparent;
+        border-color: $red;
+        border-radius: 0;
+      }
+    }
   }
 
   .primary-nav__brand {
@@ -168,5 +219,22 @@
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
       background-image: $csun-logo-retina--inverse;
     }
+  }
+
+  .primary-nav__sub-brand {
+    display: block;
+    float: left;
+    padding-left: 8px;
+    margin: 7px 0 7px 8px;
+    overflow: hidden; // Explore This Further
+    font-family: $font-brand;
+    font-size: 20px;
+    font-weight: 300;
+    color: $white;
+    text-decoration: none;
+    text-overflow: ellipsis; // Explore This Further
+    white-space: nowrap; // Explore This Further
+    cursor: pointer;
+    border-left: 1px solid $white;
   }
 }
