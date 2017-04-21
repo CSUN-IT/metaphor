@@ -107,6 +107,7 @@
 
         </div>
         <div class="col-sm-9">
+
           <h2 class="type--header type--thin">Forms</h2>
           <p>When working with forms make sure to always wrap your input fields inside a parent <code>&lt;form&gt;</code> element. You can also use <code>.form__group</code> to space out your input fields vertically.</p>
           <pre><code>&lt;form&gt;
@@ -154,8 +155,27 @@
 </code></pre>
 
 
+ <h2 class="type--header type--thin">Styled File Upload Buttons</h2>
 
 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<form>
+  <label for="file-upload" class="custom-file-upload">
+    <i class="fa fa-cloud-upload"></i> Upload File
+  </label>
+  <input id="file-upload" name='upload_cont_img' type="file" style="display:none;">
+</form>
+
+
+<script>
+$('#file-upload').change(function() {
+  var i = $(this).prev('label').clone();
+  var file = $('#file-upload')[0].files[0].name;
+  $(this).prev('label').text(file);
+});
+
+</script>
 
 
 
@@ -185,6 +205,8 @@
 
           <pre><code>&lt;label for=&quot;ex3&quot;&gt;Email&lt;/label&gt;
 &lt;input type=&quot;text&quot; id=&quot;ex3&quot; name=&quot;ex3&quot; class=&quot;datepicker&quot; placeholder=&quot;01/01/16...&quot;&gt;</code></pre>
+
+<br>
 
           <br>
 
