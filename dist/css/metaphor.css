@@ -4685,7 +4685,6 @@ pre code {
   position: relative;
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #ccc;
-  -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
 }
 
@@ -6082,7 +6081,6 @@ textarea {
   background-color: #e7e7e7;
   border-radius: 3px;
   outline: 0;
-  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -6486,7 +6484,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: scroll;
   background-color: rgba(74, 74, 74, 0.8);
   opacity: 0;
-  -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
@@ -6508,7 +6505,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   background-color: #fff;
   border-radius: 3px;
-  -webkit-transition: all .5s ease;
   transition: all .5s ease;
   -webkit-transform: translate(0, -300px);
   transform: translate(0, -300px);
@@ -6947,6 +6943,24 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   font-weight: bold;
   margin-bottom: 5px;
+}
+
+.fileUpload {
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.fileUpload input.upload {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+  filter: alpha(opacity=0);
 }
 
 footer {
