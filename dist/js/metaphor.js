@@ -2398,4 +2398,15 @@ return $.datepicker;
   });
 })(jQuery);
 
+
+function getfilename(){
+
+
+document.getElementById("uploadBtn").onchange = function () {
+    document.getElementById("uploadFile").value = this.value;
+};
+
+}
+
+
 //# sourceMappingURL=metaphor.js.map
