@@ -29,12 +29,18 @@
 .primary-nav__mobile {
   position: relative;
   height: 45px;
+  padding: 0px 5px 0px 5px;
   text-align: center;
   @include clearfix();
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     float: left;
   }
+
+  // @media (min-width: map-get($grid-breakpoints, "md")) {
+  //   float: left;
+  //   padding: 0px 5px 0px 5px;
+  // }
 }
 
 .primary-nav__btn {
@@ -84,18 +90,18 @@
   font-family: $font-brand;
   font-size: 20px;
   font-weight: 300;
-  color: #4a4a4a;
+  color: $grey;
   text-decoration: none;
   text-overflow: ellipsis; // Explore This Further
   white-space: nowrap; // Explore This Further
   cursor: pointer;
-  border-left: 1px solid #ccc;
+  border-left: 1px solid $iron;
 }
 
 .primary-nav__links {
   @include clearfix();
   display: none;
-  padding: 0;
+  padding: 0px 5px 0px 5px;
   margin: 0;
   text-align: center;
   list-style: none;
@@ -121,9 +127,9 @@
 
 .primary-nav__link {
   display: block;
-  padding: 5px 0;
+  padding: 5px 0px;
   font-size: 14px;
-  color: #4a4a4a;
+  color: $grey;
   text-decoration: none;
 
   &:hover {
@@ -131,7 +137,7 @@
   }
 
   &.active {
-    color: #fff;
+    color: $white;
     background-color: $red;
     border-radius: 3px;
   }
@@ -164,11 +170,11 @@
   background-color: rgba($black, 1);
 
   .bar {
-    background-color: #fff;
+    background-color: $white;
   }
 
   .primary-nav__link {
-    color: #fff;
+    color: $white;
   }
 
   .primary-nav__brand {

@@ -1,7 +1,7 @@
 .timeline {
     padding: 5px 0;
     list-style: none;
-    border-left: 1px solid #d00d2d;
+    border-left: 1px solid $danger;
     position: relative;
   }
 
@@ -14,10 +14,10 @@
 
   .timeline__header::before {
     content: "";
-    background-color: white;
+    background-color: $white;
     height: 11px;
     width: 11px;
-    border: 2px solid #d00d2d;
+    border: 2px solid $danger;
     position: absolute;
     border-radius: 50%;
     top: 50%;
@@ -27,10 +27,10 @@
 
   .timeline__event::before {
     content: "";
-    background-color: #d00d2d;
+    background-color: $danger;
     height: 7px;
     width: 7px;
-    border: 1px solid #d00d2d;
+    border: 1px solid $danger;
     position: absolute;
     border-radius: 50%;
     top: 50%;

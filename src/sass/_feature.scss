@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .feature {
   min-height: 1px;
-  background-color: #fff;
+  background-color: $white;
 
   @media (min-width : 768px) {
     display: flex;

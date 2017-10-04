@@ -192,7 +192,7 @@ input[type="search"]::-webkit-search-decoration {
 }
 
 fieldset {
-  border: 1px solid #c0c0c0;
+  border: 1px solid #8c8c8c;
   margin: 0 2px;
   padding: 0.35em 0.625em 0.75em;
 }
@@ -4522,6 +4522,7 @@ pre code {
 .primary-nav__mobile {
   position: relative;
   height: 45px;
+  padding: 0px 5px 0px 5px;
   text-align: center;
 }
 
@@ -4599,7 +4600,7 @@ pre code {
 
 .primary-nav__links {
   display: none;
-  padding: 0;
+  padding: 0px 5px 0px 5px;
   margin: 0;
   text-align: center;
   list-style: none;
@@ -4631,7 +4632,7 @@ pre code {
 
 .primary-nav__link {
   display: block;
-  padding: 5px 0;
+  padding: 5px 0px;
   font-size: 14px;
   color: #4a4a4a;
   text-decoration: none;
@@ -4959,7 +4960,7 @@ pre code {
 .btn:hover,
 .btn:focus,
 .btn.focus {
-  color: #333;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -4981,20 +4982,20 @@ fieldset[disabled] .btn {
 }
 
 .btn-default {
-  color: #333;
+  color: #333333;
   background-color: #fff;
   border-color: #ccc;
 }
 
 .btn-default:focus,
 .btn-default.focus {
-  color: #333;
+  color: #333333;
   background-color: #e6e6e6;
   border-color: #8c8c8c;
 }
 
 .btn-default:hover {
-  color: #333;
+  color: #333333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
@@ -5002,7 +5003,7 @@ fieldset[disabled] .btn {
 .btn-default:active,
 .btn-default.active,
 .open > .btn-default.dropdown-toggle {
-  color: #333;
+  color: #333333;
   background-color: #e6e6e6;
   border-color: #adadad;
 }
@@ -5016,8 +5017,8 @@ fieldset[disabled] .btn {
 .open > .btn-default.dropdown-toggle:hover,
 .open > .btn-default.dropdown-toggle:focus,
 .open > .btn-default.dropdown-toggle.focus {
-  color: #333;
-  background-color: #d4d4d4;
+  color: #333333;
+  background-color: #4d4d4d;
   border-color: #8c8c8c;
 }
 
@@ -5051,7 +5052,7 @@ fieldset[disabled] .btn-default.active {
 
 .btn-default .badge {
   color: #fff;
-  background-color: #333;
+  background-color: #333333;
 }
 
 .btn-primary {
@@ -5461,7 +5462,7 @@ fieldset[disabled] .btn-danger.active {
 .open > .btn-invisible.dropdown-toggle:focus,
 .open > .btn-invisible.dropdown-toggle.focus {
   color: #CF0A2C;
-  background-color: #d4d4d4;
+  background-color: #4d4d4d;
   border-color: transparent;
 }
 
@@ -6587,7 +6588,7 @@ h1, h2, h3, h4, h5, h6 {
 .progress__bar {
   width: inherit;
   height: 10px;
-  background-color: #4a4a4a;
+  background-color: #efefef;
   border-radius: inherit;
 }
 
@@ -6675,15 +6676,15 @@ h1, h2, h3, h4, h5, h6 {
 .pagination li.active a,
 .pagination li.active span {
   color: #fff;
-  background-color: #d00d20;
-  border: 1px solid #d00d20;
+  background-color: #d00d2d;
+  border: 1px solid #d00d2d;
 }
 
 .accordion__header {
   padding: 0.5787037037rem 1rem;
   margin-bottom: -1px;
   cursor: pointer;
-  background-color: #efefef;
+  background-color: #e7e7e7;
   border: 1px solid #ccc;
   border-radius: 2px;
 }
@@ -6729,7 +6730,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .timeline__header::before {
   content: "";
-  background-color: white;
+  background-color: #fff;
   height: 11px;
   width: 11px;
   border: 2px solid #d00d2d;
@@ -6821,6 +6822,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid #ccc;
 }
 
+.img--border-thick {
+  border: 5px solid #fff;
+}
+
 .img--hexagon {
   -webkit-clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
   clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%);
@@ -6858,6 +6863,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #bec6c3;
 }
 
+.type--metaphor-grey {
+  color: #4a4a4a;
+}
+
+.type--iron {
+  color: #ccc;
+}
+
 .bg--red {
   background-color: #d00d2d;
 }
@@ -6880,6 +6893,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .bg--light-gray {
   background-color: #bec6c3;
+}
+
+.bg--metaphor-grey {
+  background-color: #4a4a4a;
 }
 
 .bg--sea-green {
@@ -6910,10 +6927,22 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #e74a37;
 }
 
+.bg--iron {
+  background-color: #ccc;
+}
+
+.bg--pale-white {
+  background-color: #efefef;
+}
+
 .header--sm {
   font-size: 15px;
   text-transform: uppercase;
   letter-spacing: 1px;
+}
+
+.viewport-height {
+  min-height: 100vh;
 }
 
 .cf::before, .cf::after {
@@ -6925,8 +6954,13 @@ h1, h2, h3, h4, h5, h6 {
   clear: both;
 }
 
-.viewport-height {
-  min-height: 100vh;
+.grid--outline .col--outline {
+  border: 2px solid #d8d2c4;
+  border-radius: 3px;
+  padding: 6px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 footer {
@@ -6962,7 +6996,7 @@ footer a, footer li {
   z-index: 0;
   min-height: 130px;
   color: #979797;
-  background-color: #1a1919;
+  background-color: #1A1919;
 }
 
 @media (min-width: 544px) {

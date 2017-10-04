@@ -15,18 +15,18 @@
   display: block;
   padding: 5px 12px;
   text-decoration: none;
-  border: 1px solid #ccc;
+  border: 1px solid $iron;
   border-radius: 2px;
 }
 
 .pagination li.disabled a,
 .pagination li.disabled span {
-  background-color: #e7e7e7;
+  background-color: $default;
 }
 
 .pagination li.active a,
 .pagination li.active span {
-  color: #fff;
-  background-color: #d00d20;
-  border: 1px solid #d00d20;
+  color: $white;
+  background-color: $danger;
+  border: 1px solid $danger;
 }

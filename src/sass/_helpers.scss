@@ -40,6 +40,7 @@
   border: 0;
 }
 
+// IMAGE STYLING
 .img--fluid {
   display: block;
   max-width: 100%;
@@ -47,10 +48,11 @@
 }
 
 .img--circle { border-radius: 50%; }
-.img--border { border: 1px solid #ccc; }
+.img--border { border: 1px solid $iron; }
+.img--border-thick { border: 5px solid $white; }
 .img--hexagon { clip-path: polygon(50% 0%, 100% 20%, 100% 80%, 50% 100%, 0 80%, 0 20%); }
 
-
+// TYPE HIDDEN
 .type--hide {
   font: "0/0" a;
   color: transparent;
@@ -66,6 +68,8 @@
 .type--dark-gray { color: $dark-gray; }
 .type--gray { color: $gray; }
 .type--light-gray { color: $light-gray; }
+.type--metaphor-grey { color: $grey; }
+.type--iron { color: $iron; }
 
 // BACKGROUND COLORS
 .bg--red { background-color: $red; }
@@ -74,6 +78,7 @@
 .bg--dark-gray { background-color: $dark-gray; }
 .bg--gray { background-color: $gray; }
 .bg--light-gray { background-color: $light-gray; }
+.bg--metaphor-grey { background-color: $grey }
 .bg--sea-green { background-color: $sea-green; }
 .bg--periwinkle { background-color: $periwinkle; }
 .bg--golden-yellow { background-color: $golden-yellow; }
@@ -81,6 +86,8 @@
 .bg--iris { background-color: $iris; }
 .bg--cream { background-color: $cream; }
 .bg--scarlet { background-color: $scarlet; }
+.bg--iron { background-color: $iron; }
+.bg--pale-white { background-color: $pale; }
 
 .header--sm {
   font-size: 15px;
@@ -88,8 +95,19 @@
   letter-spacing: 1px;
 }
 
-.cf { @include clearfix(); }
-
 .viewport-height {
   min-height: 100vh;
+}
+
+// CLEARFIX
+.cf { @include clearfix(); }
+
+// GRID STYLING
+.grid--outline .col--outline {
+  border: 2px solid rgba(216, 210, 196, 1);
+  border-radius: 3px;
+  padding: 6px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
 }

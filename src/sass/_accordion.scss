@@ -5,8 +5,8 @@
   padding: modular-scale(-3) modular-scale(0);
   margin-bottom: -1px;
   cursor: pointer;
-  background-color: #efefef;
-  border: 1px solid #ccc;
+  background-color: $default;
+  border: 1px solid $iron;
   border-radius: 2px;
 }
 
@@ -15,8 +15,8 @@
   display: none;
   padding: modular-scale(0);
   margin: 0 0 -1px;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: $white;
+  border: 1px solid $iron;
 
   &--show {
     display: block;

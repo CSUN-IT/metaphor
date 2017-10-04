@@ -5,24 +5,24 @@
   @include clearfix();
   position: relative;
   // width: 100%;
-  background-color: rgba(#fff, .95);
-  border-bottom: 1px solid #ccc;
+  background-color: rgba($white, .95);
+  border-bottom: 1px solid $iron;
   transition: background-color .3s ease;
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
-    background-color: rgba(#fff, 0);
+    background-color: rgba($white, 0);
     border-bottom: 0;
     .sub-nav-wrapper {
       @include clearfix();
-      border-bottom: 1px solid rgba(#4a4a4a, .4);
+      border-bottom: 1px solid rgba($grey, .4);
     }
   }
 
   &--inverse {
-    color: #fff;
+    color: $white;
 
     .sub-nav-wrapper {
-      border-bottom: 1px solid rgba(#fff, .4);
+      border-bottom: 1px solid rgba($white, .4);
     }
   }
 }
@@ -34,10 +34,10 @@
   left: 0;
   z-index: 10;
   width: 100%;
-  background-color: rgba(#fff, .95);
+  background-color: rgba($white, .95);
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
-    border-bottom: 1px solid rgba(#4a4a4a, .4);
+    border-bottom: 1px solid rgba($grey, .4);
     .sub-nav-wrapper {
       border-bottom: 0;
     }
@@ -73,11 +73,11 @@
   list-style: none;
 
   li {
-    border-top: 1px solid #efefef;
+    border-top: 1px solid $pale;
   }
 
   li:first-child {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $iron;
   }
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {
@@ -118,8 +118,8 @@
 
   &.active {
     font-weight: bold;
-    color: #fff;
-    background-color: #4a4a4a;
+    color: $white;
+    background-color: $grey;
   }
 
   @media (min-width: map-get($grid-breakpoints, "lg")) {

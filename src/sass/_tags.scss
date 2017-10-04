@@ -18,12 +18,12 @@
   border: 1px solid #e7e7e7;
 
   &--info { background-color: $azure; border-color: $azure; }
-  &--success { color: #fff; background-color: $success; border-color: $success; }
+  &--success { color: $white; background-color: $success; border-color: $success; }
   &--warning { background-color: $warning; border-color: $warning; }
-  &--danger { color: #fff; background-color: $danger; border-color: $danger; }
+  &--danger { color: $white; background-color: $danger; border-color: $danger; }
 
-  &--default-outline { border: 1px solid #fff; color: #fff; background-color: transparent; }
-  &--danger-outline { background: #fff; border: 1px solid #d00d2d; color: #d00d2d; }
+  &--default-outline { border: 1px solid $white; color: $white; background-color: transparent; }
+  &--danger-outline { background: $white; border: 1px solid $danger; color: $danger; }
 
   // Empty tags collapse automatically
   &:empty {

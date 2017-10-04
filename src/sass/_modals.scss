@@ -11,7 +11,7 @@
   width: 100%;
   height: 100%;
   overflow-y: scroll;
-  background-color: rgba(#4a4a4a, .8);
+  background-color: rgba($grey, .8);
   opacity: 0;
   transition: all .5s ease;
 
@@ -31,7 +31,7 @@
   height: auto;
   margin: 100px auto;
   overflow: hidden;
-  background-color: #fff;
+  background-color: $white;
   border-radius: $border-radius;
   transition: all .5s ease;
   transform: translate(0, -300px);
@@ -42,7 +42,7 @@
 
 .modal__header {
   padding: modular-scale(-2) modular-scale(0);
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid $iron;
 
   h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0;
@@ -56,8 +56,8 @@
 .modal__footer {
   @include clearfix();
   padding: modular-scale(-2) modular-scale(0);
-  color: rgba(#4a4a4a, .6);
-  background-color: #efefef;
+  color: rgba($grey, .6);
+  background-color: $pale;
 }
 
 .modal__close {
@@ -65,11 +65,11 @@
   top: modular-scale(-2);
   right: modular-scale(0);
   font-size: modular-scale(0);
-  color: #ccc;
+  color: $iron;
   text-decoration: none;
   cursor: pointer;
 
   &:hover {
-    color: #4a4a4a;
+    color: $grey;
   }
 }

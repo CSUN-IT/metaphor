@@ -8,7 +8,7 @@ $panel-colors: (
 
 .panel {
   margin-bottom: modular-scale(1);
-  border: 1px solid rgba(#4a4a4a, .3);
+  border: 1px solid rgba($grey, .3);
   border-radius: $border-radius;
 
   @each $name, $hex in $panel-colors {
@@ -25,7 +25,7 @@ $panel-colors: (
 
 .panel__header {
   padding: modular-scale(-2) modular-scale(0);
-  border-bottom: 1px solid rgba(#4a4a4a, .4);
+  border-bottom: 1px solid rgba($grey, .4);
 
   h1,h2,h3,h4,h5,h6 {
     margin-bottom: 0;
@@ -33,7 +33,7 @@ $panel-colors: (
 }
 
 .panel__img {
-  background-color: #e7e7e7;
+  background-color: $default;
   display: block;
   height: 150px;
   background-position: center;
@@ -47,6 +47,6 @@ $panel-colors: (
 .panel__footer {
   @extend .milli;
   padding: modular-scale(-2) modular-scale(0);
-  color: rgba(#4a4a4a, .6);
-  background-color: #efefef;
+  color: rgba($grey, .6);
+  background-color: $pale;
 }

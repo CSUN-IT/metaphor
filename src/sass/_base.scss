@@ -14,7 +14,7 @@ html { box-sizing: border-box; }
 body {
   position: relative;
   z-index: 1;
-  background-color: #fff;
+  background-color: $white;
 }
 
 // AVOID MARGIN COLLAPSE
@@ -29,5 +29,5 @@ fieldset, pre, table {
 img { vertical-align: middle; }
 
 // SETS DEFAULT TABLE STYLES
-table { background-color: #fff; }
+table { background-color: $white; }
 th { text-align: left; }

@@ -2,7 +2,7 @@
 //
 
 .tab-container{
-  border-bottom: 1px solid #e7e7e7;
+  border-bottom: 1px solid $default;
 }
 .tabs{
   margin: 0;
@@ -25,7 +25,7 @@
   text-decoration: none;
   display: block;
   padding: 10px 20px;
-  color: #4a4a4a;
+  color: $grey;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
@@ -36,6 +36,6 @@
 
 .tab__link--active {
   font-weight: bold;
-  color: #d00d2d;
-  border-bottom: 1px solid #d00d2d;
+  color: $danger;
+  border-bottom: 1px solid $danger;
 }

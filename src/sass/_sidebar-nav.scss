@@ -4,7 +4,7 @@
 .nav {
   padding: 0;
   list-style: none;
-  border-left: 1px solid #e7e7e7;
+  border-left: 1px solid $default;
 }
 
 .nav__item {
@@ -12,7 +12,7 @@
   border-left: 1px solid transparent;
 
   &:hover {
-    border-left: 1px solid #4a4a4a;
+    border-left: 1px solid $grey;
   }
 
   &--active {
@@ -26,7 +26,7 @@
   }
 
   &--fill .nav__link {
-    background-color: #e7e7e7;
+    background-color: $default;
     border-radius: 3px;
   }
 }
