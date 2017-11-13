@@ -1,34 +1,56 @@
-  // Container widths
-//
-// Set the container width, and override it for fixed navbars in media queries.
+// Grid System
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 544px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1200px
+// ) !default;
+
+// $container-max-widths: (
+//   sm: 576px,
+//   md: 720px,
+//   lg: 940px,
+//   xl: 1140px
+// ) !default;
+
+// $grid-columns: 12;
+// $grid-gutter-width: 1.875rem; // ~30px
+
+$grid-gutter: 30px;
 
 .container {
-  @include make-container();
-  @include make-container-max-widths();
+  background-color: red;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+
+  @media (min-width: 576px) {
+    max-width: 540px;
+  }
+
+  @media (min-width: 768px) {
+    max-width: 720px;
+  }
+
+  @media (min-width: 992px) {
+    max-width: 960px;
+  }
+
+  @media (min-width: 1200px) {
+    max-width: 1140px;
+  }
 
 }
-
-
-// Fluid container
-//
-// Utilizes the mixin meant for fixed width containers, but without any defined
-// width for fluid, full width layouts.
-
-.container-fluid {
-  @include make-container();
-}
-
-
-// Row
-//
-// Rows contain and clear the floats of your columns.
 
 .row {
-  @include make-row();
+  // display: -ms-flexbox;
+  display: flex;
+  // -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
 }
-
-// Columns
-//
-// Common styles for small and large grid columns
-
-@include make-grid-columns();
