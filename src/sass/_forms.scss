@@ -3,18 +3,10 @@
 
 label {
   display: block;
-  margin-bottom: .5rem;
+  font-weight: bold;
+  margin-bottom: .3rem;
   font-family: $font-base;
   font-size: modular-scale(0);
-  font-weight: bold;
-}
-
-.label--required {
-  &::after {
-    margin-left: 2px;
-    color: $red;
-    content: "*";
-  }
 }
 
 select,
@@ -29,11 +21,6 @@ input[type="password"] {
   background-color: $white;
   border: 1px solid $iron;
   border-radius: $border-radius;
-  outline: 0;
-
-  &::placeholder {
-    // color: $gray;
-  }
 }
 
 select,
@@ -48,4 +35,62 @@ input[type="password"] {
 
 textarea { resize: vertical; }
 
-.form__group { margin-bottom: modular-scale(-1); }
+.form__field {
+  position: relative;
+  margin-bottom: modular-scale(0);
+}
+
+.form__field--required {
+  label {
+    &::after {
+      content: "*";
+      color: $red;
+      margin-left: 2px;
+    }
+  }
+}
+
+.form__alert {
+  color: $white;
+  font-size: modular-scale(-1);
+  padding: 2px 8px;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: -2px;
+  display: none;
+}
+
+.form__msg {
+  padding-top: 2px;
+  font-size: modular-scale(-2);
+  color: rgba($grey, .6);
+  margin-bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: italic;
+  position: absolute;
+}
+
+.form__field--danger {
+  select,
+  input[type="text"],
+  input[type="email"],
+  input[type="search"],
+  input[type="submit"],
+  input[type="reset"],
+  input[type="password"] {
+    border: 1px solid $red;
+  }
+  .form__alert {
+    background-color: $red;
+    display: block;
+  }
+}

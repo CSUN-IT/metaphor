@@ -4685,7 +4685,6 @@ pre code {
   position: relative;
   background-color: rgba(255, 255, 255, 0.95);
   border-bottom: 1px solid #ccc;
-  -webkit-transition: background-color .3s ease;
   transition: background-color .3s ease;
 }
 
@@ -5966,16 +5965,10 @@ a.tag:focus, a.tag:hover {
 
 label {
   display: block;
-  margin-bottom: .5rem;
+  font-weight: bold;
+  margin-bottom: .3rem;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
-  font-weight: bold;
-}
-
-.label--required::after {
-  margin-left: 2px;
-  color: #d00d2d;
-  content: "*";
 }
 
 select,
@@ -5990,7 +5983,6 @@ input[type="password"] {
   background-color: #fff;
   border: 1px solid #ccc;
   border-radius: 3px;
-  outline: 0;
 }
 
 select,
@@ -6007,8 +5999,59 @@ textarea {
   resize: vertical;
 }
 
-.form__group {
-  margin-bottom: 0.8333333333rem;
+.form__field {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form__field--required label::after {
+  content: "*";
+  color: #d00d2d;
+  margin-left: 2px;
+}
+
+.form__alert {
+  color: #fff;
+  font-size: 0.8333333333rem;
+  padding: 2px 8px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: -2px;
+  display: none;
+}
+
+.form__msg {
+  padding-top: 2px;
+  font-size: 0.6944444444rem;
+  color: rgba(74, 74, 74, 0.6);
+  margin-bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-style: italic;
+  position: absolute;
+}
+
+.form__field--danger select,
+.form__field--danger input[type="text"],
+.form__field--danger input[type="email"],
+.form__field--danger input[type="search"],
+.form__field--danger input[type="submit"],
+.form__field--danger input[type="reset"],
+.form__field--danger input[type="password"] {
+  border: 1px solid #d00d2d;
+}
+
+.form__field--danger .form__alert {
+  background-color: #d00d2d;
+  display: block;
 }
 
 .panel {
@@ -6082,7 +6125,6 @@ textarea {
   background-color: #e7e7e7;
   border-radius: 3px;
   outline: 0;
-  -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
 }
 
@@ -6486,7 +6528,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: scroll;
   background-color: rgba(74, 74, 74, 0.8);
   opacity: 0;
-  -webkit-transition: all .5s ease;
   transition: all .5s ease;
 }
 
@@ -6508,7 +6549,6 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   background-color: #fff;
   border-radius: 3px;
-  -webkit-transition: all .5s ease;
   transition: all .5s ease;
   -webkit-transform: translate(0, -300px);
   transform: translate(0, -300px);
@@ -7022,6 +7062,33 @@ footer a, footer li {
 
 .main--metalab {
   min-height: calc(100vh - 328px);
+}
+
+.select2-container .select2-selection--single {
+  height: 40px;
+  border: 1px solid #ccc;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 38px;
+}
+
+.select2-search--dropdown .select2-search__field {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form__field--danger .select2-container .select2-selection--single {
+  border: 1px solid #d00d2d;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: #2f79b9;
 }
 
 /*# sourceMappingURL=metaphor.css.map */

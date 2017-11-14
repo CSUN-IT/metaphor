@@ -1,0 +1,29 @@
+// SELECT 2 OVERRIDES
+//
+
+.select2-container .select2-selection--single {
+  height: 40px;
+  border: 1px solid #ccc;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: 38px;
+}
+
+.select2-search--dropdown .select2-search__field {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.form__field--danger .select2-container .select2-selection--single {
+  border: 1px solid $red;
+}
+
+.select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: $blue;
+}
