@@ -4489,7 +4489,7 @@ pre code {
 .primary-nav {
   position: relative;
   z-index: 100;
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: white;
   border-bottom: 1px solid rgba(74, 74, 74, 0.1);
 }
 
@@ -4501,6 +4501,20 @@ pre code {
 
 @media (min-width: 992px) {
   .primary-nav {
+    border-bottom: 0;
+  }
+}
+
+.primary-nav--fixed {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid rgba(74, 74, 74, 0.1);
+}
+
+@media (min-width: 992px) {
+  .primary-nav--fixed {
     border-bottom: 0;
   }
 }
@@ -4650,7 +4664,7 @@ pre code {
 }
 
 .primary-nav--cream {
-  background-color: rgba(216, 210, 196, 0.9);
+  background-color: #d8d2c4;
 }
 
 .primary-nav--cream .bar {
@@ -4658,7 +4672,7 @@ pre code {
 }
 
 .primary-nav--black {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: black;
 }
 
 .primary-nav--black .bar {

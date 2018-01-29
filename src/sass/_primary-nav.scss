@@ -8,8 +8,19 @@
   @include clearfix();
   position: relative;
   z-index: 100;
-  background-color: rgba($white, .95);
-  border-bottom: 1px solid rgba($grey, .1);
+  background-color: rgba(#fff, 1);
+  border-bottom: 1px solid rgba(#4a4a4a, .1);
+  @media (min-width: map-get($grid-breakpoints, "lg")) {
+    border-bottom: 0;
+  }
+}
+
+.primary-nav--fixed{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  background-color: rgba(#fff, 1 );
+  border-bottom: 1px solid rgba(#4a4a4a, .1);
   @media (min-width: map-get($grid-breakpoints, "lg")) {
     border-bottom: 0;
   }
@@ -148,7 +159,7 @@
 }
 
 .primary-nav--cream {
-  background-color: rgba($cream, .9);
+  background-color: rgba($cream, 1);
 
   .bar {
     background-color: $red;
@@ -156,7 +167,7 @@
 }
 
 .primary-nav--black {
-  background-color: rgba($black, .9);
+  background-color: rgba($black, 1);
 
   .bar {
     background-color: $white;
